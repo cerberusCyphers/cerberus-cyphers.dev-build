@@ -1,0 +1,15 @@
+* {
+  background-color: rgb(100, 100, 100);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+}
+
+.nav-link {
+  float: right;
+  margin: 10px 5px 0 5px;
+  border-bottom: 2px solid red;
+  text-transform: uppercase;
+  list-style-type: none;
+}
