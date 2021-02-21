@@ -15,7 +15,7 @@ html {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)),
-    url("img/AdobeStock_76237574_Preview.jpeg");
+    url("img/CCScreens.jpg");
   background-size: cover;
   background-position: unset;
   height: 100vh;
@@ -32,28 +32,42 @@ h1 {
 .row {
   max-width: 1704px;
 }
-
-.header img {
-  height: 100%;
-  width: auto;
-  background: ;
+.main-nav {
+  color: rgb(169, 226, 157);
 }
 
 .main-nav img {
-  width: 50px;
+  width: 75px;
   border-radius: 50%;
   float: left;
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 .main-nav li {
   float: right;
   margin: 10px;
-  border-bottom: 2px solid red;
+  /* border-bottom: 2px solid red; */
   text-transform: uppercase;
   list-style-type: none;
 }
 
 .hero-text-box {
-  padding-top: 100px;
+  color: green;
+  padding-top: 10px;
+}
+
+/* ---- Links ---- */
+
+a:link,
+a:visited {
+  color: rgb(97, 202, 97);
+  text-decoration: none;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: rgb(185, 56, 56);
+  border-bottom: 2px solid transparent;
 }
