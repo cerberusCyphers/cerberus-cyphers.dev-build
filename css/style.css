@@ -35,6 +35,9 @@ h1 {
   text-align: center;
   margin-top: 15%;
 }
+h2 {
+  margin-left: 25px;
+}
 
 .row {
   max-width: 1704px;
@@ -69,9 +72,9 @@ h1 {
 
 a:link,
 a:visited {
-  color: rgb(160, 42, 42);
+  color: rgb(223, 223, 223);
   text-decoration: none;
-  transition: border-bottom 0.2s, color 0.2s;
+  transition: border-bottom 4s, color 0.4s;
 }
 
 a:hover,
@@ -84,6 +87,18 @@ a:active {
 /* -------------- BUTTONS --------------*/
 /* --------------------------------------------*/
 
+.hero-box-btn {
+  display: block;
+  background-color: rgba(27, 27, 27, 0.521);
+  border-radius: 200px;
+  width: 175px;
+  height: auto;
+  font-size: 30px;
+  text-align: center;
+  margin-left: 25%;
+  margin-top: 55px;
+}
+
 .hero-box-btn:link,
 .hero-box-btn:visited,
 input[type="submit"] {
@@ -91,8 +106,11 @@ input[type="submit"] {
   padding: 10px 30px;
   font-weight: 300;
   text-decoration: none;
-  border-radius: 200px;
 }
+
+/* -------------------------------------------- */
+/* ------------ MINI GAMES -------------*/
+/* --------------------------------------------*/
 
 .section-games {
   height: 600px;
@@ -103,6 +121,7 @@ input[type="submit"] {
 /* --------------------------------------------*/
 
 .row-pig {
+  margin-left: 10px;
   position: relative;
   width: 33%;
   height: 575px;
@@ -183,7 +202,7 @@ input[type="submit"] {
 .btn {
   position: absolute;
   left: 16rem;
-  transform: translateX(-50%);
+  transform: translateX(-55%);
   color: #444;
   background: none;
   border: none;
@@ -232,7 +251,7 @@ input[type="submit"] {
   position: absolute;
   left: 16rem;
   top: 5rem;
-  transform: translateX(-50%);
+  transform: translateX(-55%);
   height: 5rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
 }
