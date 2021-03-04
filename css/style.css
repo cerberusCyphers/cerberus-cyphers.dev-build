@@ -201,7 +201,7 @@ input[type="submit"] {
 /* ABSOLUTE POSITIONED ELEMENTS */
 .btn {
   position: absolute;
-  left: 16rem;
+  left: 255px;
   transform: translateX(-55%);
   color: #444;
   background: none;
@@ -249,7 +249,7 @@ input[type="submit"] {
 
 .dice {
   position: absolute;
-  left: 16rem;
+  left: 255px;
   top: 5rem;
   transform: translateX(-55%);
   height: 5rem;
@@ -268,3 +268,5 @@ input[type="submit"] {
 .hidden {
   display: none;
 }
+
+
