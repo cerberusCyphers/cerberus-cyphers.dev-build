@@ -18,10 +18,7 @@ html {
 /* --------------------------------------------*/
 
 header {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.801),
-      rgba(0, 0, 0, 0.541)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.541)),
     url("img/CCScreens.jpg");
   background-size: cover;
   background-position: unset;
@@ -78,9 +75,8 @@ a:visited {
 a:hover,
 a:active {
   color: rgb(40, 148, 7);
-  border-bottom: 2px solid ;
+  border-bottom: 2px solid;
   transition: border-bottom 0.4s, color 0.4s;
-
 }
 
 /* -------------------------------------------- */
@@ -108,24 +104,22 @@ a:active {
 .secondary-btn {
   display: inline-block;
   padding: 5px 20px;
-  color:rgba(189, 31, 31, 0.795);
+  color: rgba(189, 31, 31, 0.795);
   font-weight: 700;
   background-color: rgba(66, 122, 49, 0.267);
   margin-left: 30px;
   border: 2px solid rgb(57, 105, 42);
   border-radius: 25px;
   text-decoration: none;
-
 }
 
 /* -------------------------------------------- */
 /* -------------- GAMES --------------*/
 /* --------------------------------------------*/
 
-
 .section-games {
   display: grid;
-  grid-template-columns:
+  /* grid-template-columns: */
   height: 600px;
 }
 
@@ -290,6 +284,8 @@ a:active {
 
 .vid-omni {
   margin-left: 20px;
+}
+rgin-left: 20px;
 }
 t: 20px;
 }
