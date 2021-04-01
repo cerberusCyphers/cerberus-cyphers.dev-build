@@ -5,7 +5,7 @@
 }
 
 html {
-	background-color: rgb(100, 100, 100);
+	background-color: rgba(0, 0, 0, 0.801);
 	font-family: 'Titillium Web';
 	font-size: 20px;
 	font-weight: 300;
@@ -36,6 +36,7 @@ h1 {
 	margin-top: 15%;
 }
 h2 {
+	color: azure;
 	margin-left: 25px;
 }
 
@@ -134,16 +135,14 @@ input[type='submit'] {
 }
 
 /* -------------------------------------------- */
-/* ------------ MINI GAMES -------------*/
+/* -------------- GAMES --------------*/
 /* --------------------------------------------*/
 
 .section-games {
 	height: 600px;
 }
 
-/* -------------------------------------------- */
 /* -------------- PIG GAME --------------*/
-/* --------------------------------------------*/
 
 .row-pig {
 	margin-left: 10px;
@@ -292,4 +291,18 @@ input[type='submit'] {
 
 .hidden {
 	display: none;
+}
+
+/* -------------------------------------------- */
+/* -------------- PROJECTS --------------*/
+/* --------------------------------------------*/
+
+.videos {
+	background-color: rgb(122, 46, 46);
+	padding-top: 20px;
+	padding-left: 200px;
+}
+
+.vid-omni {
+	margin-left: 20px;
 }
