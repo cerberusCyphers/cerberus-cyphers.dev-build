@@ -327,4 +327,24 @@ input[type='submit'] {
 	margin-left: 20px;
 }
 
+/* -------------------------------------------- */
+
+/* -------------- FOOTER --------------*/
+
+/* --------------------------------------------*/
+
+footer {
+	background-color: rgb(109, 109, 109);
+}
+
+.social-media img {
+	width: 1.5rem;
+	height: auto;
+	padding: 0.2rem;
+}
+
+.attribute {
+	font-size: 0.5rem;
+}
+
 /*# sourceMappingURL=index.ea68c68a.css.map */
