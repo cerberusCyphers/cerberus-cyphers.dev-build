@@ -154,7 +154,7 @@ input[type='submit'] {
 	height: 600px;
 }
 
-/* -------------- PIG GAME --------------*/
+/* -------------- PIG GAME --------------
 
 .row-pig {
 	margin-left: 10px;
@@ -311,10 +311,10 @@ input[type='submit'] {
 	display: none;
 }
 
+*/
+
 /* -------------------------------------------- */
-
 /* -------------- PROJECTS --------------*/
-
 /* --------------------------------------------*/
 
 .videos {
@@ -329,21 +329,62 @@ input[type='submit'] {
 
 /* -------------------------------------------- */
 
+/* -------------- EMAIL LIST --------------*/
+
+/* --------------------------------------------*/
+
+#mc_embed_signup {
+	background-image: linear-gradient(
+			rgba(190, 91, 91, 0.801),
+			rgba(190, 91, 91, 0.801)
+		),
+		url(dark_logo_white_background.c9ea8125.jpg);
+	background-size: cover;
+}
+
+.email-button {
+	background-color: #bebe5b;
+}
+
+/* -------------------------------------------- */
+
 /* -------------- FOOTER --------------*/
 
 /* --------------------------------------------*/
 
 footer {
-	background-color: rgb(109, 109, 109);
+	display: flex;
+	height: 5rem;
+	width: 100vw;
+	overflow: hidden;
+	justify-content: space-evenly;
+	background-color: rgb(83, 83, 83);
+	padding-top: 1rem;
 }
 
-.social-media img {
-	width: 1.5rem;
-	height: auto;
-	padding: 0.2rem;
+.foot-links a {
+	padding-top: 0.7rem;
+	padding-right: 1rem;
+}
+
+.copy {
+	padding-top: 1rem;
+}
+
+footer img {
+	width: 1.7rem;
+	padding: 0.3rem;
+}
+
+.social-media a:link,
+.social-media a:visited,
+.social-media a:hover,
+.social-media a:active {
+	border-bottom: none;
 }
 
 .attribute {
+	padding-top: 0.5rem;
 	font-size: 0.5rem;
 }
 
