@@ -11,6 +11,23 @@ html {
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
+	width: 100vw;
+}
+
+h1 {
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 30%;
+}
+
+h2 {
+	color: azure;
+	margin-left: 25px;
+}
+
+.hidden {
+	display: none;
 }
 
 /* -------------------------------------------- */
@@ -25,50 +42,61 @@ header {
 			rgba(189, 31, 31, 0.795)
 		),
 		url('CCScreens.27e8f9b9.jpg');
-	background-size: cover;
+	background-size: contain;
 	background-position: unset;
-	height: 100vh;
+	height: 60vh;
 	background-attachment: fixed;
 }
 
-h1 {
-	color: #fff;
-	font-size: 80px;
-	text-align: center;
-	margin-top: 15%;
+.hero-text-box {
+	padding-top: 10px;
 }
 
-h2 {
-	color: azure;
-	margin-left: 25px;
+/* -------------------------------------------- */
+
+/* ------------- NAVI -----------------*/
+
+/* --------------------------------------------*/
+
+.hamburger {
+	float: left;
+	background-color: chartreuse;
+	border-radius: 40px;
+	width: 50px;
+	padding: 2px;
+	margin-left: 1em;
+	margin-top: 4%;
+	position: fixed;
+	z-index: 9999;
 }
 
-.row {
-	max-width: 1704px;
+.logo {
+	width: 60px;
+	border-radius: 50%;
+	float: right;
+	margin-right: 5%;
+	margin-top: 4%;
 }
 
 .main-nav {
-	color: rgb(169, 226, 157);
-}
-
-.main-nav img {
-	width: 75px;
-	border-radius: 50%;
-	float: left;
-	margin-left: 50px;
-	margin-top: 20px;
+	margin-top: 4.1em;
+	margin-left: 1em;
+	color: black;
+	font-weight: 600;
+	position: fixed;
+	z-index: 9999;
 }
 
 .main-nav li {
-	float: right;
-	margin: 20px;
+	color: crimson;
+	align-content: right;
+	padding-top: 0.2em;
+	padding-left: 0.4em;
+	border: 2px solid chartreuse;
+	background-color: rgba(128, 255, 0, 0.699);
+	width: 5.5rem;
 	text-transform: uppercase;
 	list-style-type: none;
-}
-
-.hero-text-box {
-	color: green;
-	padding-top: 10px;
 }
 
 /* -------------------------------------------- */
@@ -79,7 +107,7 @@ h2 {
 
 a:link,
 a:visited {
-	color: rgb(223, 223, 223);
+	color: rgb(37, 37, 37);
 	text-decoration: none;
 	transition: border-bottom 4s, color 0.4s;
 }
@@ -92,68 +120,58 @@ a:active {
 
 /* -------------------------------------------- */
 
-/* -------------- UNDER CONSTRUCTION --------------*/
-
-/* --------------------------------------------*/
-
-.under {
-	display: block;
-	padding-top: 50px;
-	padding-left: 400px;
-	background-color: maroon;
-	color: mintcream;
-	font-weight: 700;
-	justify-items: center;
-}
-
-.under a {
-	color: rgb(19, 226, 46);
-}
-
-.under img {
-	width: 500px;
-	height: auto;
-	padding: 60px 0 60px 0;
-	margin-left: 250px;
-}
-
-/* -------------------------------------------- */
-
 /* -------------- BUTTONS --------------*/
 
 /* --------------------------------------------*/
 
-.hero-box-btn {
-	display: block;
-	background-color: rgba(27, 27, 27, 0.521);
+button {
+	display: inline-block;
 	border-radius: 200px;
-	width: 175px;
-	height: auto;
-	font-size: 30px;
 	text-align: center;
-	margin-left: 25%;
-	margin-top: 55px;
+	word-wrap: none;
+	margin-left: 15%;
+	margin-top: 3rem;
+}
+
+.hero-box-btn {
+	color: rgba(27, 27, 27);
+	background-color: rgba(128, 255, 0, 0.521);
+	font-size: 0.8rem;
+	font-weight: 600;
+	width: 8em;
+	height: 3em;
 }
 
 .hero-box-btn:link,
-.hero-box-btn:visited,
-input[type='submit'] {
+.hero-box-btn:visited s {
 	display: inline-block;
-	padding: 10px 30px;
 	font-weight: 300;
 	text-decoration: none;
 }
 
+.secondary-btn {
+	color: chartreuse;
+	background-color: rgba(27, 27, 27, 0.521);
+	width: 6em;
+	height: 2.5em;
+}
+
 /* -------------------------------------------- */
 
-/* -------------- GAMES --------------*/
+/* -------------- UNDER CONSTRUCTION --------------*/
 
 /* --------------------------------------------*/
 
-.section-games {
-	height: 600px;
+.about {
+	display: block;
+	background-color: maroon;
+	color: mintcream;
+	font-weight: 500;
+	justify-items: center;
+	padding: 1rem 0 0.5rem 1rem;
 }
 
+<<<<<<< HEAD
 /* -------------- PIG GAME --------------
 
 .row-pig {
@@ -168,149 +186,84 @@ input[type='submit'] {
 	border-radius: 9px;
 	overflow: hidden;
 	display: flex;
+=======
+.about a {
+	color: rgb(19, 226, 46);
+>>>>>>> mobile
 }
 
-.player {
-	flex: 50%;
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	transition: all 0.75s;
+.about img {
+	width: 17rem;
+	height: auto;
 }
 
-/* ELEMENTS */
+/* -------------------------------------------- */
 
-.name {
-	position: relative;
-	font-size: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	word-spacing: 2px;
-	font-weight: 300;
-	margin-bottom: 1rem;
+/* -------------- GAMES --------------*/
+
+/* --------------------------------------------*/
+
+.section-games {
+	height: 600px;
 }
 
-.score {
-	font-size: 2rem;
-	font-weight: 300;
-	color: #c7365f;
-	margin-bottom: auto;
+/* -------------------------------------------- */
+
+/* -------------- PROJECTS --------------*/
+
+/* --------------------------------------------*/
+
+.section-projects {
+	height: 600px;
+	background-color: rgb(122, 46, 46);
 }
 
-.player--active {
-	background-color: rgba(255, 255, 255, 0.4);
+.apps,
+.vids {
+	padding-top: 1rem;
+	padding-left: 1rem;
 }
 
-.player--active .name {
-	font-weight: 700;
+/* -------------------------------------------- */
+
+/* -------------- EMAIL LIST --------------*/
+
+/* --------------------------------------------*/
+
+#mc_embed_signup {
+	background-image: linear-gradient(
+			rgba(190, 91, 91, 0.801),
+			rgba(190, 91, 91, 0.801)
+		),
+		url(dark_logo_white_background.c9ea8125.jpg);
+	background-size: cover;
 }
 
-.player--active .score {
-	font-weight: 400;
+.email-button {
+	background-color: #bebe5b;
 }
 
-.player--active .current {
-	opacity: 1;
-}
+/* -------------------------------------------- */
 
-.current {
-	background-color: #c7365f;
-	opacity: 0.8;
-	border-radius: 9px;
-	color: #fff;
-	width: 200px;
-	height: 100px;
-	padding: 0.5rem;
-	text-align: center;
-	transition: all 0.75s;
-}
+/* -------------- FOOTER --------------*/
 
-.current-label {
-	text-transform: uppercase;
-	margin-bottom: 0px;
-	font-size: 1.2rem;
-	color: #ddd;
-}
+/* --------------------------------------------*/
 
-.current-score {
-	font-size: 2rem;
-}
-
-/* ABSOLUTE POSITIONED ELEMENTS */
-
-.btn {
-	position: absolute;
-	left: 16rem;
-	transform: translateX(-55%);
-	color: #444;
-	background: none;
-	border: none;
-	font-family: inherit;
-	font-size: 10px;
-	text-transform: uppercase;
-	cursor: pointer;
-	font-weight: 800;
-	transition: all 0.2s;
-
-	background-color: white;
-	background-color: rgba(255, 255, 255, 0.6);
-	backdrop-filter: blur(10px);
-
-	padding: 0.7rem 2.5rem;
-	border-radius: 50rem;
-	box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
-}
-
-.btn::first-letter {
-	font-size: 1rem;
-	display: inline-block;
-	margin-right: 0.2rem;
-}
-
-.btn--new {
-	top: 13rem;
-}
-
-.btn--roll {
-	top: 16.5rem;
-}
-
-.btn--hold {
-	top: 20rem;
-}
-
-.btn:active {
-	transform: translate(-50%, 3px);
-	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-}
-
-.btn:focus {
-	outline: none;
-}
-
-.dice {
-	position: absolute;
-	left: 16rem;
-	top: 5rem;
-	transform: translateX(-55%);
+footer {
+	display: block;
 	height: 5rem;
-	box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	justify-content: center;
+	background-color: rgb(83, 83, 83);
+	padding-top: 1rem;
+	font-size: 0.5rem;
 }
 
-.player--winner {
-	background-color: #2f2f2f;
-}
-
-.player--winner .name {
-	font-weight: 700;
-	color: #c7365f;
-}
-
-.hidden {
+.foot-links a {
 	display: none;
 }
 
+<<<<<<< HEAD
 */
 
 /* -------------------------------------------- */
@@ -321,12 +274,19 @@ input[type='submit'] {
 	background-color: rgb(122, 46, 46);
 	padding-top: 20px;
 	padding-left: 200px;
+=======
+.copy {
+	padding-top: 0.5rem;
+	padding-left: 3.5rem;
+>>>>>>> mobile
 }
 
-.vid-omni {
-	margin-left: 20px;
+footer img {
+	width: 1.2rem;
+	padding: 0.2rem;
 }
 
+<<<<<<< HEAD
 /* -------------------------------------------- */
 
 /* -------------- EMAIL LIST --------------*/
@@ -376,6 +336,13 @@ footer img {
 	padding: 0.3rem;
 }
 
+=======
+.social-media {
+	padding-top: 0.2rem;
+	padding-left: 6.5rem;
+}
+
+>>>>>>> mobile
 .social-media a:link,
 .social-media a:visited,
 .social-media a:hover,
@@ -384,8 +351,13 @@ footer img {
 }
 
 .attribute {
+<<<<<<< HEAD
 	padding-top: 0.5rem;
 	font-size: 0.5rem;
+=======
+	padding-top: 0.3rem;
+	font-size: 0.3rem;
+>>>>>>> mobile
 }
 
 /*# sourceMappingURL=index.ea68c68a.css.map */

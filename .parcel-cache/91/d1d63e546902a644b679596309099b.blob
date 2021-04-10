@@ -1,0 +1,273 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: rgba(0, 0, 0, 0.801);
+	font-family: 'Titillium Web';
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+	width: 100vw;
+}
+
+h1 {
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 30%;
+}
+
+h2 {
+	color: azure;
+	margin-left: 25px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* -------------------------------------------- */
+
+/* ------------- HEADER -----------------*/
+
+/* --------------------------------------------*/
+
+header {
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.801),
+			rgba(189, 31, 31, 0.795)
+		),
+		url('a20d0baa80ef52bd0c20e0cb9d01db18');
+	background-size: contain;
+	background-position: unset;
+	height: 80vh;
+	background-attachment: fixed;
+}
+
+.hero-text-box {
+	padding-top: 10px;
+}
+
+/* -------------------------------------------- */
+
+/* ------------- NAVI -----------------*/
+
+/* --------------------------------------------*/
+
+.hamburger {
+	float: left;
+	background-color: chartreuse;
+	border-radius: 40px;
+	width: 50px;
+	padding: 2px;
+	margin-left: 1em;
+	margin-top: 4%;
+	position: fixed;
+	z-index: 9999;
+}
+
+.logo {
+	width: 60px;
+	border-radius: 50%;
+	float: right;
+	margin-right: 5%;
+	margin-top: 4%;
+}
+
+.main-nav {
+	margin-top: 4.1em;
+	margin-left: 1em;
+	color: chartreuse;
+	position: fixed;
+	z-index: 9999;
+}
+
+.main-nav li {
+	color: crimson;
+	align-content: right;
+	padding-top: 0.2em;
+	padding-left: 0.4em;
+	border: 2px solid chartreuse;
+	background-color: rgba(128, 255, 0, 0.521);
+	width: 5.5rem;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+/* -------------------------------------------- */
+
+/* ---------------- LINKS ------------------*/
+
+/* --------------------------------------------*/
+
+a:link,
+a:visited {
+	color: rgb(223, 223, 223);
+	text-decoration: none;
+	transition: border-bottom 4s, color 0.4s;
+}
+
+a:hover,
+a:active {
+	color: rgb(185, 56, 56);
+	border-bottom: 2px solid transparent;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- BUTTONS --------------*/
+
+/* --------------------------------------------*/
+
+button {
+	display: inline-block;
+	border-radius: 200px;
+	text-align: center;
+	word-wrap: none;
+	margin-left: 15%;
+	margin-top: 3rem;
+}
+
+.hero-box-btn {
+	color: rgba(27, 27, 27);
+	background-color: rgba(128, 255, 0, 0.521);
+	font-size: 0.8rem;
+	font-weight: 600;
+	width: 8em;
+	height: 3em;
+}
+
+.hero-box-btn:link,
+.hero-box-btn:visited s {
+	display: inline-block;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.secondary-btn {
+	color: chartreuse;
+	background-color: rgba(27, 27, 27, 0.521);
+	width: 6em;
+	height: 2.5em;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- UNDER CONSTRUCTION --------------*/
+
+/* --------------------------------------------*/
+
+.under {
+	display: block;
+	background-color: maroon;
+	color: mintcream;
+	font-weight: 500;
+	justify-items: center;
+	padding: 0.3rem;
+}
+
+.under a {
+	color: rgb(19, 226, 46);
+}
+
+.under img {
+	width: 18rem;
+	height: auto;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- GAMES --------------*/
+
+/* --------------------------------------------*/
+
+.section-games {
+	height: 600px;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- PROJECTS --------------*/
+
+/* --------------------------------------------*/
+
+.section-projects {
+	height: 600px;
+	background-color: rgb(122, 46, 46);
+}
+
+.apps,
+.vids {
+	padding-top: 1rem;
+	padding-left: 1rem;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- EMAIL LIST --------------*/
+
+/* --------------------------------------------*/
+
+#mc_embed_signup {
+	background-image: linear-gradient(
+			rgba(190, 91, 91, 0.801),
+			rgba(190, 91, 91, 0.801)
+		),
+		url(1c6e00b097a862365b55c0c9f612d88f);
+	background-size: cover;
+}
+
+.email-button {
+	background-color: #bebe5b;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- FOOTER --------------*/
+
+/* --------------------------------------------*/
+
+footer {
+	display: block;
+	height: 5rem;
+	overflow: hidden;
+	justify-content: center;
+	background-color: rgb(83, 83, 83);
+	padding-top: 1rem;
+	font-size: 0.5rem;
+}
+
+.foot-links a {
+	display: none;
+}
+
+.copy {
+	padding-top: 0.5rem;
+	padding-left: 3.5rem;
+}
+
+footer img {
+	width: 1.2rem;
+	padding: 0.2rem;
+}
+
+.social-media {
+	padding-top: 0.2rem;
+	padding-left: 6.5rem;
+}
+
+.social-media a:link,
+.social-media a:visited,
+.social-media a:hover,
+.social-media a:active {
+	border-bottom: none;
+}
+
+.attribute {
+	padding-top: 0.3rem;
+	font-size: 0.3rem;
+}

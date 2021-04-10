@@ -1,0 +1,238 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: rgba(0, 0, 0, 0.801);
+	font-family: 'Titillium Web';
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+	width: 100vw;
+}
+
+/* -------------------------------------------- */
+
+/* ------------- HEADER -----------------*/
+
+/* --------------------------------------------*/
+
+header {
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.801),
+			rgba(189, 31, 31, 0.795)
+		),
+		url('a20d0baa80ef52bd0c20e0cb9d01db18');
+	background-size: contain;
+	background-position: unset;
+	height: 550px;
+	background-attachment: fixed;
+}
+
+h1 {
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 15%;
+}
+
+h2 {
+	color: azure;
+	margin-left: 25px;
+}
+
+/* .row {
+	max-width: 1704px;
+} */
+
+.main-nav {
+	color: rgb(169, 226, 157);
+}
+
+.main-nav img {
+	width: 60px;
+	border-radius: 50%;
+	float: left;
+	margin-left: 5%;
+	margin-top: 4%;
+}
+
+.dots {
+	color: azure;
+}
+
+.main-nav li {
+	float: right;
+
+	margin-top: 4%;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+.hero-text-box {
+	color: green;
+	padding-top: 10px;
+}
+
+/* -------------------------------------------- */
+
+/* ---------------- LINKS ------------------*/
+
+/* --------------------------------------------*/
+
+a:link,
+a:visited {
+	color: rgb(223, 223, 223);
+	text-decoration: none;
+	transition: border-bottom 4s, color 0.4s;
+}
+
+a:hover,
+a:active {
+	color: rgb(185, 56, 56);
+	border-bottom: 2px solid transparent;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- BUTTONS --------------*/
+
+/* --------------------------------------------*/
+
+.hero-box-btn {
+	display: block;
+	background-color: rgba(27, 27, 27, 0.521);
+	border-radius: 200px;
+	width: 4em;
+	height: auto;
+	text-align: center;
+	word-wrap: none;
+	margin-left: 15%;
+	margin-top: 3rem;
+}
+
+.hero-box-btn:link,
+.hero-box-btn:visited,
+input[type='submit'] {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- UNDER CONSTRUCTION --------------*/
+
+/* --------------------------------------------*/
+
+.under {
+	display: block;
+	background-color: maroon;
+	color: mintcream;
+	font-weight: 500;
+	justify-items: center;
+	word-wrap: normal;
+}
+
+.under a {
+	color: rgb(19, 226, 46);
+}
+
+.under img {
+	width: 14em;
+	height: auto;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- GAMES --------------*/
+
+/* --------------------------------------------*/
+
+.section-games {
+	height: 600px;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- PROJECTS --------------*/
+
+/* --------------------------------------------*/
+
+.section-projects {
+	height: 600px;
+	background-color: rgb(122, 46, 46);
+}
+
+.apps,
+.vids {
+	padding-top: 1rem;
+	padding-left: 1rem;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- EMAIL LIST --------------*/
+
+/* --------------------------------------------*/
+
+#mc_embed_signup {
+	background-image: linear-gradient(
+			rgba(190, 91, 91, 0.801),
+			rgba(190, 91, 91, 0.801)
+		),
+		url(1c6e00b097a862365b55c0c9f612d88f);
+	background-size: cover;
+}
+
+form {
+	width: 77vw;
+}
+
+.email-button {
+	background-color: #bebe5b;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- FOOTER --------------*/
+
+/* --------------------------------------------*/
+
+footer {
+	display: flex;
+	height: 5rem;
+	overflow: hidden;
+	justify-content: space-evenly;
+	background-color: rgb(83, 83, 83);
+	padding-top: 1rem;
+	font-size: 0.6rem;
+}
+
+.foot-links a {
+}
+
+.copy {
+	padding-top: 1rem;
+}
+
+footer img {
+	width: 1rem;
+	padding: 0.3rem;
+}
+
+.social-media a:link,
+.social-media a:visited,
+.social-media a:hover,
+.social-media a:active {
+	border-bottom: none;
+}
+
+.attribute {
+	padding-top: 0.5rem;
+	font-size: 0.5rem;
+}
