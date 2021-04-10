@@ -1,0 +1,391 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: rgba(0, 0, 0, 0.801);
+	font-family: 'Titillium Web';
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+}
+
+/* -------------------------------------------- */
+
+/* ------------- HEADER -----------------*/
+
+/* --------------------------------------------*/
+
+header {
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.801),
+			rgba(189, 31, 31, 0.795)
+		),
+		url('a20d0baa80ef52bd0c20e0cb9d01db18');
+	background-size: contain;
+	background-position: unset;
+	width: 100vw;
+	height: 550px;
+	background-attachment: fixed;
+}
+
+h1 {
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 15%;
+}
+
+h2 {
+	color: azure;
+	margin-left: 25px;
+}
+
+/* .row {
+	max-width: 1704px;
+} */
+
+.main-nav {
+	color: rgb(169, 226, 157);
+}
+
+.main-nav img {
+	width: 60px;
+	border-radius: 50%;
+	float: left;
+	margin-left: 5%;
+	margin-top: 4%;
+}
+
+.dots {
+	color: azure;
+}
+
+.main-nav li {
+	float: right;
+
+	margin-top: 4%;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+.hero-text-box {
+	color: green;
+	padding-top: 10px;
+}
+
+/* -------------------------------------------- */
+
+/* ---------------- LINKS ------------------*/
+
+/* --------------------------------------------*/
+
+a:link,
+a:visited {
+	color: rgb(223, 223, 223);
+	text-decoration: none;
+	transition: border-bottom 4s, color 0.4s;
+}
+
+a:hover,
+a:active {
+	color: rgb(185, 56, 56);
+	border-bottom: 2px solid transparent;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- UNDER CONSTRUCTION --------------*/
+
+/* --------------------------------------------*/
+
+.under {
+	display: block;
+	background-color: maroon;
+	color: mintcream;
+	font-weight: 700;
+	justify-items: center;
+}
+
+.under a {
+	color: rgb(19, 226, 46);
+}
+
+.under img {
+	width: 10em;
+	height: auto;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- BUTTONS --------------*/
+
+/* --------------------------------------------*/
+
+.hero-box-btn {
+	display: block;
+	background-color: rgba(27, 27, 27, 0.521);
+	border-radius: 200px;
+	width: 175px;
+	height: auto;
+	font-size: 30px;
+	text-align: center;
+	margin-left: 25%;
+	margin-top: 55px;
+}
+
+.hero-box-btn:link,
+.hero-box-btn:visited,
+input[type='submit'] {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- GAMES --------------*/
+
+/* --------------------------------------------*/
+
+.section-games {
+	height: 600px;
+}
+
+/* -------------- PIG GAME --------------
+
+.row-pig {
+	margin-left: 10px;
+	position: relative;
+	width: 33%;
+	height: 575px;
+	background-color: rgba(45, 126, 52, 0.35);
+	backdrop-filter: blur(200px);
+	filter: blur();
+	box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+	border-radius: 9px;
+	overflow: hidden;
+	display: flex;
+}
+
+.player {
+	flex: 50%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all 0.75s;
+}
+
+/* ELEMENTS */
+
+.name {
+	position: relative;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+.score {
+	font-size: 2rem;
+	font-weight: 300;
+	color: #c7365f;
+	margin-bottom: auto;
+}
+
+.player--active {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.player--active .name {
+	font-weight: 700;
+}
+
+.player--active .score {
+	font-weight: 400;
+}
+
+.player--active .current {
+	opacity: 1;
+}
+
+.current {
+	background-color: #c7365f;
+	opacity: 0.8;
+	border-radius: 9px;
+	color: #fff;
+	width: 200px;
+	height: 100px;
+	padding: 0.5rem;
+	text-align: center;
+	transition: all 0.75s;
+}
+
+.current-label {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	font-size: 1.2rem;
+	color: #ddd;
+}
+
+.current-score {
+	font-size: 2rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+
+.btn {
+	position: absolute;
+	left: 16rem;
+	transform: translateX(-55%);
+	color: #444;
+	background: none;
+	border: none;
+	font-family: inherit;
+	font-size: 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 800;
+	transition: all 0.2s;
+
+	background-color: white;
+	background-color: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+
+	padding: 0.7rem 2.5rem;
+	border-radius: 50rem;
+	box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn::first-letter {
+	font-size: 1rem;
+	display: inline-block;
+	margin-right: 0.2rem;
+}
+
+.btn--new {
+	top: 13rem;
+}
+
+.btn--roll {
+	top: 16.5rem;
+}
+
+.btn--hold {
+	top: 20rem;
+}
+
+.btn:active {
+	transform: translate(-50%, 3px);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.dice {
+	position: absolute;
+	left: 16rem;
+	top: 5rem;
+	transform: translateX(-55%);
+	height: 5rem;
+	box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--winner {
+	background-color: #2f2f2f;
+}
+
+.player--winner .name {
+	font-weight: 700;
+	color: #c7365f;
+}
+
+.hidden {
+	display: none;
+}
+
+*/
+
+/* -------------------------------------------- */
+/* -------------- PROJECTS --------------*/
+/* --------------------------------------------*/
+
+.videos {
+	background-color: rgb(122, 46, 46);
+	padding-top: 20px;
+	padding-left: 200px;
+}
+
+.vid-omni {
+	margin-left: 20px;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- EMAIL LIST --------------*/
+
+/* --------------------------------------------*/
+
+#mc_embed_signup {
+	background-image: linear-gradient(
+			rgba(190, 91, 91, 0.801),
+			rgba(190, 91, 91, 0.801)
+		),
+		url(1c6e00b097a862365b55c0c9f612d88f);
+	background-size: cover;
+}
+
+.email-button {
+	background-color: #bebe5b;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- FOOTER --------------*/
+
+/* --------------------------------------------*/
+
+footer {
+	display: flex;
+	height: 5rem;
+	width: 100vw;
+	overflow: hidden;
+	justify-content: space-evenly;
+	background-color: rgb(83, 83, 83);
+	padding-top: 1rem;
+}
+
+.foot-links a {
+	padding-top: 0.7rem;
+	padding-right: 1rem;
+}
+
+.copy {
+	padding-top: 1rem;
+}
+
+footer img {
+	width: 1.7rem;
+	padding: 0.3rem;
+}
+
+.social-media a:link,
+.social-media a:visited,
+.social-media a:hover,
+.social-media a:active {
+	border-bottom: none;
+}
+
+.attribute {
+	padding-top: 0.5rem;
+	font-size: 0.5rem;
+}

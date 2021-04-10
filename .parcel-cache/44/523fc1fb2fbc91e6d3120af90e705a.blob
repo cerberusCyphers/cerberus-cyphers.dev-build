@@ -1,0 +1,9 @@
+'use strict'
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.main-nav');
+
+hamburger.addEventListener('click', function(e) {
+    e.preventDefault();
+    navMenu.classList.toggle('hidden');
+    console.log('click');
+}
