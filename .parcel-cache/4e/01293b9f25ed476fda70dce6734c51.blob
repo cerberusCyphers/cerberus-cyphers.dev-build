@@ -1,0 +1,2 @@
+!function(){const c=document.querySelector(".hamburger"),e=document.querySelector(".main-nav");console.log(c),c.addEventListener("click",(function(c){e.classList.toggle("hidden"),console.log("click")})),e.addEventListener("click",(function(c){e.classList.add("hidden"),console.log("click")}))}();
+//# sourceMappingURL=index.HASH_REF_f7bc176299c25c6a80653794cafbbf66.js.map

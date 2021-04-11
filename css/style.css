@@ -174,15 +174,24 @@ button {
 /* --------------------------------------------*/
 
 .section-games {
-	height: 600px;
+	height: 100vh;
+	background-color: rgba(190, 91, 91, 0.801);
 }
 
+.section-games video {
+	padding-left: 1em;
+}
+
+.section-games a {
+	color: rgb(19, 226, 46);
+	padding-left: 2em;
+}
 /* -------------------------------------------- */
 /* -------------- PROJECTS --------------*/
 /* --------------------------------------------*/
 
 .section-projects {
-	height: 600px;
+	height: 100vh;
 	background-color: rgb(122, 46, 46);
 }
 
@@ -190,6 +199,11 @@ button {
 .vids {
 	padding-top: 1rem;
 	padding-left: 1rem;
+}
+
+.section-projects img {
+	width: 300px;
+	padding-left: 1em;
 }
 
 /* -------------------------------------------- */

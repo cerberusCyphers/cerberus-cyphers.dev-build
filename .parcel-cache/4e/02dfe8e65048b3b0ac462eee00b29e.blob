@@ -41,7 +41,7 @@ header {
 			rgba(0, 0, 0, 0.801),
 			rgba(189, 31, 31, 0.795)
 		),
-		url('CCScreens.27e8f9b9.jpg');
+		url('7381fc03fe6e12099df154d272e0f01e');
 	background-size: contain;
 	background-position: unset;
 	height: 60vh;
@@ -233,7 +233,7 @@ button {
 			rgba(190, 91, 91, 0.801),
 			rgba(190, 91, 91, 0.801)
 		),
-		url(dark_logo_white_background.c9ea8125.jpg);
+		url(8ec750074fdfecc69e314d23bca7bf58);
 	background-size: cover;
 }
 
@@ -287,5 +287,3 @@ footer img {
 	padding-top: 0.3rem;
 	font-size: 0.3rem;
 }
-
-/*# sourceMappingURL=index.ea68c68a.css.map */
