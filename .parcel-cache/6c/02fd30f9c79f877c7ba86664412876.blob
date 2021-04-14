@@ -1,0 +1,43 @@
+@media screen and (min-width: 400px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	.about img {
+		width: 18rem;
+	}
+
+	video {
+		width: 17rem;
+		height: auto;
+		margin-top: 2rem;
+		margin-left: 2rem;
+	}
+
+	.section-projects img {
+		width: 18rem;
+		padding-top: 1rem;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	header {
+		padding-left: 1rem;
+	}
+
+	header button {
+		margin-left: 4.2rem;
+	}
+
+	.section-games video {
+		width: 20rem;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.section-games video {
+		width: 20rem;
+		height: auto;
+	}
+}

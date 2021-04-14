@@ -16,7 +16,7 @@ html {
 
 h1 {
 	color: #fff;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	text-align: center;
 	margin-top: 30%;
 }
@@ -120,7 +120,7 @@ button {
 	border-radius: 200px;
 	text-align: center;
 	word-wrap: none;
-	margin-left: 15%;
+	margin-left: 12%;
 	margin-top: 3rem;
 }
 
@@ -165,7 +165,7 @@ button {
 }
 
 .about img {
-	width: 17rem;
+	width: 14rem;
 	height: auto;
 }
 
@@ -179,7 +179,8 @@ button {
 }
 
 .section-games video {
-	padding-left: 1em;
+	padding-top: 0;
+	padding-bottom: 0.5rem;
 }
 
 .section-games a {
@@ -202,8 +203,7 @@ button {
 }
 
 .section-projects img {
-	width: 300px;
-	padding-left: 1em;
+	width: 280px;
 }
 
 /* -------------------------------------------- */

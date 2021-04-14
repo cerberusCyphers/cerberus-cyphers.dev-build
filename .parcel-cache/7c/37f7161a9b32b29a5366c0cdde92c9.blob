@@ -1,0 +1,16 @@
+@media screen and (min-width: 400px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	.about img {
+		width: 18rem;
+	}
+
+	video {
+		width: 350;
+		height: 250;
+		margin-top: 2rem;
+		margin-left: 2rem;
+	}
+}
