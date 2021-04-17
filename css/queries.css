@@ -1,51 +1,18 @@
-@media screen and (min-width: 400px) {
-	h1 {
-		font-size: 2rem;
-	}
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
 
-	.about img {
-		width: 18rem;
-	}
-
-	video {
-		width: 17rem;
-		height: auto;
-		margin-top: 2rem;
-		margin-left: 2rem;
-	}
-
-	.section-projects img {
-		width: 18rem;
-		padding-top: 1rem;
-	}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
 }
 
-@media screen and (min-width: 500px) {
-	header {
-		padding-left: 1rem;
-	}
-
-	header button {
-		margin-left: 4.2rem;
-	}
-
-	.section-games video {
-		width: 20rem;
-		height: auto;
-	}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
 }
 
-@media screen and (min-width: 600px) {
-	.section-games video {
-		width: 23rem;
-		height: auto;
-	}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
 }
 
-@media screen and (min-width: 1000px) {
-	.section-projects {
-		display: block;
-		height: 100vh;
-		color: white;
-	}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }

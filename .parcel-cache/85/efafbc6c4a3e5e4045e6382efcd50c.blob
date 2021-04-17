@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: rgba(0, 0, 0, 0.801);
+	font-family: 'Titillium Web';
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+}
+
+/*-------------------------*/
+/*---------HEADER----------*/
+/*-------------------------*/
+
+.logo {
+	width: 60px;
+	border-radius: 50%;
+	float: right;
+	margin-right: 5%;
+	margin-top: 4%;
+}
+
+.hamburger {
+	float: left;
+	background-color: chartreuse;
+	border-radius: 40px;
+	width: 50px;
+	padding: 2px;
+	margin-left: 1rem;
+	margin-top: 1%;
+	position: fixed;
+	z-index: 9999;
+}
+
+.main-nav {
+	margin-top: 4.1em;
+	margin-left: 1em;
+	color: black;
+	font-weight: 600;
+	position: fixed;
+	z-index: 9999;
+}
+
+.main-nav li {
+	color: crimson;
+	align-content: right;
+	padding-top: 0.2em;
+	padding-left: 0.4em;
+	border: 2px solid chartreuse;
+	background-color: rgba(128, 255, 0, 0.699);
+	width: 5.5rem;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+/*-------------------------*/
+/*---------GAMES-----------*/
+/*-------------------------*/
+
+/*-------------------------*/
+/*---------PROJECTS--------*/
+/*-------------------------*/
+
+/*-------------------------*/
+/*---------MAIL-LIST-------*/
+/*-------------------------*/
+
+/*-------------------------*/
+/*---------FOOTER----------*/
+/*-------------------------*/

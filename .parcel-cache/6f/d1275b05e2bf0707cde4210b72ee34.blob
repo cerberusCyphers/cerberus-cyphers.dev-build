@@ -1,0 +1,10 @@
+.logo {
+	width: 30%;
+}
+
+.hamburger {
+	background-color: chartreuse;
+	border-radius: 40px;
+	width: 50px;
+	z-index: 9999;
+}

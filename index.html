@@ -3,9 +3,19 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/css/style.css" />
-		<link rel="stylesheet" href="/css/queries.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<!-- <link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/queries.css" /> -->
+		<link rel="stylesheet" href="/css/bootstrap.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,300&display=swap"
@@ -29,125 +39,166 @@
 
 	<body>
 		<header>
-			<div class="nav">
-				<img
-					src="/img/white_logo_color_background_square.jpg"
-					alt="temp logo"
-					class="logo"
-				/>
-				<img src="/img/more.png" class="hamburger" />
-				<ul class="hidden main-nav">
-					<li><a href="#about">About Us</a></li>
-					<li><a href="#section-games">Games</a></li>
-					<li><a href="#section-projects">Projects</a></li>
-					<li><a href="#mc_embed_signup_scroll">Sign Up</a></li>
-				</ul>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+						<img src="/img/more.png" class="hamburger" />
+						<ul class="hidden main-nav">
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#section-games">Games</a></li>
+							<li><a href="#section-projects">Projects</a></li>
+							<li><a href="#mc_embed_signup_scroll">Sign Up</a></li>
+						</ul>
+					</div>
+						<div class="col">
+							<img
+								src="/img/white_logo_color_background_square.jpg"
+								alt="temp logo"
+								class="logo"
+							/>
+					</div>
+				</div>
 			</div>
-			<div class="hero-text-box">
+			<div class="row hero-text-box">
+				<div class="col-12">
 				<h1>Cerberus Cyphers<br />Developing for you!</h1>
+			</div>
+			</div>
+				<div class="row">
+				<div class="col-6">
 				<button
 					onclick="window.location.href='#section-games';"
 					class="button hero-box-btn"
 				>
-					Dive In!
+					DIVE IN !
 				</button>
+				</div>
+				<div class="col-6">
 				<button
 					onclick="window.location.href='#mc_embed_signup_scroll';"
 					class="button secondary-btn"
 				>
 					Join Us
 				</button>
+				</div>				
 			</div>
 		</header>
-		<div class="about" id="about">
-			<p>
-				We are currently working on this site. In the meantime, check out one of
-				our works here:
-				<a href="https://banditsoutdoors.netlify.app/"
-					>banditsoutdoors.netlify.com</a
-				><br />
-				<img src="/img/construction.jfif" alt="contruction image" />
+		<div class="container about" id="about">
+			<div class="row">
+				<div class="col"><p>
+					We are currently working on this site. In the meantime, check out one of
+					our works here:
+					<a href="https://banditsoutdoors.netlify.app/"
+						>banditsoutdoors.netlify.com</a>
+					</div>
+				<div class="col">
+				<img src="/img/construction.jfif" alt="contruction image" width="300"/>
+			</div>
 			</p>
+			</div>			
 		</div>
-		<div class="section-games" id="section-games">
-			<div class="vids">
+		<div class="container-fluid section-games" id="section-games">
+			<div class="row pig">
 				<h2>Games</h2>
 				<video class="vid-pig" width="280" height="200" controls>
 					<source src="/vids/PigGame.mp4" type="video/mp4" /></video
 				><br />
 				<a href="https://cc-dice-pig.netlify.app/">cc-dice-pig.netlify.app</a>
+			</div>
+				<div class="row guess">
 				<video class="vid-guess" width="280" height="200" controls>
 					<source src="/vids/GuessNumber.mp4" type="video/mp4" /></video
 				><br />
 				<a href="https://cc-guess-number.netlify.app/"
 					>cc-guess-number.netlify.app</a
-				>
+				>			
 			</div>
 		</div>
-		<section class="section-projects" id="section-projects">
+		<section class="container-fluid section-projects" id="section-projects">
 			<div class="apps">
 				<h2>Projects Gallery</h2>
-				<div class="app bankist">
+				<div class="row bankist">
+					<div class="col">
+						<p>
+							<a href="https://cc-bankist.netlify.app/">cc-bankist.netlify.app</a>
+						</p>
+					</div>
+					<div class="col">
 					<img
 						loading="lazy"
 						src="/img/projects/bankist.jpg"
 						alt="bankist"
-						class="bankist-img"
+						class="img-fluid bankist-img"
 					/>
-					<p>
-						<a href="https://cc-bankist.netlify.app/">cc-bankist.netlify.app</a>
-					</p>
 				</div>
-				<div class="app bandit">
+				</div>
+				<div class="row bandit">
+					<div class="col">
 					<img
 						loading="lazy"
 						src="/img/projects/bandit.jpg"
 						alt="banditsoutdoors"
-						class="bandit-img"
+						class="img-fluid bandit-img"
 					/>
+				</div>
+				<div class="col">
 					<p>
 						Blog style website created
-						<a href="https://banditsoutdoors.netlify.app/"
-							>banditsoutdoors.netlify.app</a
-						>
-						<img
-							src="/img/dev-icons/logo-css3.svg"
-							alt="css"
-							class="css tools"
-						/>
-						<img
-							src="/img/dev-icons/logo-html5.svg"
-							alt="html"
-							class="html tools"
-						/>
-						<img
-							src="/img/dev-icons/logo-javascript.svg"
-							alt="javascript"
-							class="js tools"
-						/>
+						<a href="https://banditsoutdoors.netlify.app/">
+							<img
+								src="/img/dev-icons/logo-html5.svg"
+								alt="html"
+								class="html tools"
+								width="16"
+								height="20"
+							/>
+							<img
+								src="/img/dev-icons/logo-css3.svg"
+								alt="css"
+								class="css tools"
+								width="16"
+								height="20"
+							/>
+							<img
+								src="/img/dev-icons/logo-javascript.svg"
+								alt="javascript"
+								class="js tools"
+								width="16"
+								height="20"
+							/>
+							banditsoutdoors.netlify.app</a>
 					</p>
+					</div>
 				</div>
-				<div class="app mapty">
+				<div class="row mapty">
+					<div class="col">
+						<p>
+							<a href="https://cc-mapty.netlify.app/">cc-mapty.netlify.app</a>
+						</p>
+					</div>
+					<div class="col">
 					<img
 						loading="lazy"
 						src="/img/projects/mapty.jpg"
 						alt="mapty"
-						class="mapty-img"
+						class="img-fluid mapty-img"
 					/>
-					<p>
-						<a href="https://cc-mapty.netlify.app/">cc-mapty.netlify.app</a>
-					</p>
 				</div>
-				<div class="app forkify">
+				</div>
+				<div class="row forkify">
+					<div class="col">
 					<img
 						loading="lazy"
 						src="/img/projects/forkify.jpg"
 						alt="forkify"
-						class="forkify-img"
+						class="img-fluid forkify-img"
 					/>
+				</div>
+				<div class="col">
 					<p>
 						<a href="https://cc-forkify.netlify.app/">cc-forkify.netlify.app</a>
 					</p>
+				</div>
 				</div>
 			</div>
 		</section>
@@ -226,7 +277,7 @@
 				</div>
 			</form>
 		</div>
-		<footer>
+		<footer class="container">
 			<div class="foot-links">
 				<a href="#">Home</a> <a href="#about">About</a>
 			</div>
@@ -237,18 +288,30 @@
 				<a
 					href="https://www.facebook.com/Cerberus-Cyphers-108534644627866"
 					class="icon"
-					><img src="/img/733536-social/png/045-facebook.png"
+					><img
+						src="/img/733536-social/png/045-facebook.png"
+						width="16"
+						height="20"
 				/></a>
 				<a
 					href="https://www.linkedin.com/in/craig-colwell-767689125/"
 					class="icon"
-					><img src="/img/733536-social/png/031-linkedin.png"
+					><img
+						src="/img/733536-social/png/031-linkedin.png"
+						width="16"
+						height="20"
 				/></a>
 				<a href="https://github.com/cerberusCyphers" class="icon"
-					><img src="/img/733536-social/png/039-github.png"
+					><img
+						src="/img/733536-social/png/039-github.png"
+						width="16"
+						height="20"
 				/></a>
 				<a href="https://api.whatsapp.com/send?phone=18456258360" class="icon"
-					><img src="/img/733536-social/png/007-whatsapp.png" /></a
+					><img
+						src="/img/733536-social/png/007-whatsapp.png"
+						width="16"
+						height="20" /></a
 				><br />
 				<p class="attribute">
 					Icons made by
@@ -264,5 +327,20 @@
 				</p>
 			</div>
 		</footer>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
