@@ -119,20 +119,14 @@ button {
 }
 .hero {
 	display: flex;
-	justify-content: center;
-	align-content: center;
+	justify-content: space-around;
+	align-items: center;
 }
-
-/* .hero-button {
-	display: flex;
-	justify-content: right;
-	align-content: center;
-} */
 
 .hero-box-btn {
 	color: rgba(27, 27, 27);
 	background-color: rgba(128, 255, 0, 0.521);
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	font-weight: 700;
 	width: 8em;
 	height: 3em;
@@ -168,9 +162,26 @@ button {
 /*-------------------------*/
 
 .section-games {
-	margin-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(184, 184, 184);
 }
 
+.section-games h2 {
+	color: crimson;
+}
+
+.section-games video {
+	width: 50%;
+	height: auto;
+}
+
+.pig,
+.guess {
+	color: crimson;
+	margin: 0.5rem;
+	padding-top: 3rem;
+}
 /*-------------------------*/
 /*---------PROJECTS--------*/
 /*-------------------------*/

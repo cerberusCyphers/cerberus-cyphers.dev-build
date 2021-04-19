@@ -58,15 +58,7 @@
 	}
 
 	.hero-box-btn {
-		margin-left: 10rem;
-	}
-
-	.about {
-		height: 50vh;
-	}
-
-	.section-games {
-		height: 75vh;
+		font-size: 1.1rem;
 	}
 }
 
@@ -94,6 +86,10 @@
 
 	.secondary-btn {
 		font-size: 1.5rem;
+	}
+
+	.section-games {
+		flex-direction: row;
 	}
 }
 
