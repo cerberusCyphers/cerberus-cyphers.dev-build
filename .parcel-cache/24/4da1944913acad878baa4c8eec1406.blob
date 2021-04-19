@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/queries.css" /> -->
+		<link rel="stylesheet" href="/index.HASH_REF_ba6b9223712ed284a4c2f56ae302fa29.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
+		<script src="/index.HASH_REF_afb742f2e085b5374b064e171dd7fb88.js" defer=""></script>
+		<link rel="icon shortcut" type="image/x-icon" href="/1614305134.HASH_REF_c4de54848bf00b1691df8f0dea66158d.ico">
+		<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+		<style>#mc_embed_signup {
+				clear: left;
+				font: 14px Helvetica, Arial, sans-serif;
+			}
+</style>
+		<title>Cerberus Cyphers</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+						<img src="/white_logo_color_background_square.HASH_REF_dea83045cfd3f6a54e9c2111bd132b31.jpg" alt="temp logo" class="logo">
+					</div>
+					<div class="col-4">
+						<img src="/more.HASH_REF_75929cb446caa2577a74a122c54f9071.png" class="hamburger">
+						<ul class="hidden main-nav">
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#section-games">Games</a></li>
+							<li><a href="#section-projects">Projects</a></li>
+							<li><a href="#mc_embed_signup_scroll">Sign Up</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row hero-text-box">
+				<div class="col-12">
+				<h1>Cerberus Cyphers<br>Developing for you!</h1>
+			</div>
+			</div>
+				<div class="row">
+				<div class="col-6">
+				<button onclick="window.location.href='#section-games';" class="button hero-box-btn">
+					DIVE IN !
+				</button>
+				</div>
+				<div class="col-6">
+				<button onclick="window.location.href='#mc_embed_signup_scroll';" class="button secondary-btn">
+					Join Us
+				</button>
+				</div>				
+			</div>
+		</header>
+		<div class="container about" id="about">
+			<div class="row">
+				<div class="col"><p>
+					We are currently working on this site. In the meantime, check out one of
+					our works here:
+					<a href="https://banditsoutdoors.netlify.app/">banditsoutdoors.netlify.com</a>
+					</p></div>
+				<div class="col">
+				<img src="/construction.HASH_REF_521ee607c5e559aa50ad6ec60516f5cb.jfif" alt="contruction image" width="300">
+			</div>
+			<p></p>
+			</div>			
+		</div>
+		<div class="container-fluid section-games" id="section-games">
+			<div class="row pig">
+				<h2>Games</h2>
+				<video class="vid-pig" width="280" height="200" controls="">
+					<source src="/PigGame.HASH_REF_e5e00879d92ef88f4601c955509dd64c.mp4" type="video/mp4"></video><br>
+				<a href="https://cc-dice-pig.netlify.app/">cc-dice-pig.netlify.app</a>
+			</div>
+				<div class="row guess">
+				<video class="vid-guess" width="280" height="200" controls="">
+					<source src="/GuessNumber.HASH_REF_e917fe7c2be5e21acd540a2506a1e936.mp4" type="video/mp4"></video><br>
+				<a href="https://cc-guess-number.netlify.app/">cc-guess-number.netlify.app</a>			
+			</div>
+		</div>
+		<section class="container-fluid section-projects" id="section-projects">
+			<div class="apps">
+				<h2>Projects Gallery</h2>
+				<div class="row bankist">
+					<div class="col">
+						<p>
+							<a href="https://cc-bankist.netlify.app/">cc-bankist.netlify.app</a>
+						</p>
+					</div>
+					<div class="col">
+					<img loading="lazy" src="/bankist.HASH_REF_ce02c9159a083c8a275e1b0cef8c2582.jpg" alt="bankist" class="img-fluid bankist-img">
+				</div>
+				</div>
+				<div class="row bandit">
+					<div class="col">
+					<img loading="lazy" src="/bandit.HASH_REF_7330e9cb13dfb0ac194fadf7a3b0759f.jpg" alt="banditsoutdoors" class="img-fluid bandit-img">
+				</div>
+				<div class="col">
+					<p>
+						Blog style website created
+						<a href="https://banditsoutdoors.netlify.app/">
+							<img src="/logo-html5.HASH_REF_f45fac2de98b7483ea53a164c2811bdf.svg" alt="html" class="html tools" width="16" height="20">
+							<img src="/logo-css3.HASH_REF_cb0a56d6dd9766d1798c6c9607ccc0a4.svg" alt="css" class="css tools" width="16" height="20">
+							<img src="/logo-javascript.HASH_REF_f5e395318319cc0d4e9c4152bcae311e.svg" alt="javascript" class="js tools" width="16" height="20">
+							banditsoutdoors.netlify.app</a>
+					</p>
+					</div>
+				</div>
+				<div class="row mapty">
+					<div class="col">
+						<p>
+							<a href="https://cc-mapty.netlify.app/">cc-mapty.netlify.app</a>
+						</p>
+					</div>
+					<div class="col">
+					<img loading="lazy" src="/mapty.HASH_REF_1071f62e6a3d3467580de2e9fda458a9.jpg" alt="mapty" class="img-fluid mapty-img">
+				</div>
+				</div>
+				<div class="row forkify">
+					<div class="col">
+					<img loading="lazy" src="/forkify.HASH_REF_4f8c855dc179c19c85c1296822d52c5f.jpg" alt="forkify" class="img-fluid forkify-img">
+				</div>
+				<div class="col">
+					<p>
+						<a href="https://cc-forkify.netlify.app/">cc-forkify.netlify.app</a>
+					</p>
+				</div>
+				</div>
+			</div>
+		</section>
+		<div id="mc_embed_signup">
+			<form action="https://cerberus-cyphers.us1.list-manage.com/subscribe/post?u=beb15aab2c05d33762cfce655&amp;id=96449f77f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+				<div id="mc_embed_signup_scroll">
+					<h2>Subscribe</h2>
+					<div class="indicates-required">
+						<span class="asterisk">*</span> indicates required
+					</div>
+					<div class="mc-field-group">
+						<label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+						</label>
+						<input type="email" value="" name="EMAIL" class="email required" id="mce-EMAIL">
+					</div>
+					<div class="mc-field-group">
+						<label for="mce-FNAME">First Name <span class="asterisk">*</span>
+						</label>
+						<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+					</div>
+					<div class="mc-field-group">
+						<label for="mce-MMERGE2">Your Request </label>
+						<input type="text" value="" name="MMERGE2" id="mce-MMERGE2">
+					</div>
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display: none
+"></div>
+						<div class="response" id="mce-success-response" style="display: none
+"></div>
+					</div>
+					<div style="position: absolute; left: -5000px
+" aria-hidden="true">
+						<input type="text" name="b_beb15aab2c05d33762cfce655_96449f77f3" tabindex="-1" value="">
+					</div>
+					<div class="clear">
+						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="email-button">
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer class="container-fluid">
+			<div class="row">
+			<div class="col foot-links">
+				<a href="#"><img src="/ios-home.HASH_REF_228a031a8a0b70c39f8911ca499b8883.svg" alt="home" class="foot-img" width="16" height="20"></a> 
+				<a href="#about"><img src="/ios-apps.HASH_REF_e11a94321a2d6bc4d767bef54808584f.svg" alt="apps" class="foot-img" width="16" height="20"></a>
+				
+							
+			</div>
+			<div class="col-6 copy">
+				<p>Copyright © Cerberus Cyphers 2021. All rights reserved.</p>
+			</div>
+			<div class="col social-media">
+				<a href="https://www.facebook.com/Cerberus-Cyphers-108534644627866" class="icon"><img src="/045-facebook.HASH_REF_c0302c5d3a2651e9e65992df7c38ba78.png" width="16" height="20"></a>
+				<a href="https://www.linkedin.com/in/craig-colwell-767689125/" class="icon"><img src="/031-linkedin.HASH_REF_89746d8451b42f4491ba27087457196b.png" width="16" height="20"></a>
+				<a href="https://github.com/cerberusCyphers" class="icon"><img src="/039-github.HASH_REF_1658e38f2ae47013d87c4ac7be09b05e.png" width="16" height="20"></a>
+				<a href="https://api.whatsapp.com/send?phone=18456258360" class="icon"><img src="/007-whatsapp.HASH_REF_950c424753a0e392b9f24e54ac37c2fe.png" width="16" height="20"></a><br>
+				<p class="attribute">
+					Icons made by
+					<a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+					from
+					<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+				</p>
+			</div>
+		</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>

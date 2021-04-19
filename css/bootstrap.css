@@ -28,6 +28,10 @@ h2 {
 	display: none;
 }
 
+a {
+	color: chartreuse;
+}
+
 /*-------------------------*/
 /*---------HEADER----------*/
 /*-------------------------*/
@@ -42,52 +46,64 @@ header {
 	background-position: unset;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 40vh;
+	height: 35vh;
 }
 
-.logo {
+.mobile-logo {
 	width: 60px;
 	border-radius: 50%;
-	float: right;
+	float: left;
 	margin-right: 5%;
 	margin-top: 4%;
+}
+
+.main-logo {
+	display: none;
 }
 
 /*-------------------------*/
 /*---------NAVIGATION------*/
 /*-------------------------*/
 
+/*---------MOBILE------*/
+.nav {
+	justify-content: flex-end;
+}
 .hamburger {
-	float: left;
 	background-color: chartreuse;
 	border-radius: 40px;
 	width: 50px;
 	padding: 2px;
-	margin-left: 0.1rem;
-	margin-top: 2%;
+	margin-top: 3%;
 	position: fixed;
 	z-index: 9999;
 }
 
-.main-nav {
-	margin-top: 4.1em;
-	margin-left: 0.1em;
-	color: black;
+.mobile-nav {
+	margin-top: 4.5rem;
 	font-weight: 600;
 	position: fixed;
 	z-index: 9999;
 }
 
-.main-nav li {
-	color: crimson;
+.mobile-nav li {
 	align-content: right;
-	padding-top: 0.2em;
-	padding-left: 0.4em;
+	padding: 2px;
 	border: 2px solid chartreuse;
 	background-color: rgba(128, 255, 0, 0.699);
 	width: 5.5rem;
 	text-transform: uppercase;
 	list-style-type: none;
+}
+
+.mobile-nav a:link,
+.mobile-nav a:visited {
+	color: crimson;
+}
+
+.mobile-nav a:hover,
+.mobile-nav a:active {
+	color: rgb(81, 81, 81);
 }
 
 /* -------------------------------------------- */
@@ -99,9 +115,19 @@ button {
 	border-radius: 200px;
 	text-align: center;
 	word-wrap: none;
-	margin-left: 12%;
 	margin-top: 3rem;
 }
+.hero {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+/* .hero-button {
+	display: flex;
+	justify-content: right;
+	align-content: center;
+} */
 
 .hero-box-btn {
 	color: rgba(27, 27, 27);
@@ -113,10 +139,12 @@ button {
 }
 
 .hero-box-btn:link,
-.hero-box-btn:visited s {
-	display: inline-block;
+.hero-box-btn:visited {
 	font-weight: 300;
 	text-decoration: none;
+}
+
+.sec-button {
 }
 
 .secondary-btn {
@@ -127,12 +155,52 @@ button {
 }
 
 /*-------------------------*/
+/*---------ABOUT-----------*/
+/*-------------------------*/
+
+.about {
+	color: azure;
+	padding-bottom: 0.5rem;
+}
+
+/*-------------------------*/
 /*---------GAMES-----------*/
 /*-------------------------*/
+
+.section-games {
+	margin-left: 1rem;
+}
 
 /*-------------------------*/
 /*---------PROJECTS--------*/
 /*-------------------------*/
+
+.section-projects {
+	padding-bottom: 1rem;
+	background-color: rgb(66, 66, 66);
+}
+
+.desc {
+	color: mintcream;
+	background-color: maroon;
+	border-radius: 4%;
+}
+
+.tools {
+	border-radius: 10%;
+}
+
+.html {
+	background-color: red;
+}
+
+.css {
+	background-color: rgb(0, 94, 255);
+}
+
+.js {
+	background-color: yellow;
+}
 
 /*-------------------------*/
 /*---------MAIL-LIST-------*/
@@ -143,7 +211,7 @@ button {
 			rgba(190, 91, 91, 0.801),
 			rgba(190, 91, 91, 0.801)
 		),
-		url(/img/dark_logo_white_background.jpg);
+		url(/img/logo/white_logo_transparent_background.png);
 	background-size: cover;
 }
 
@@ -157,4 +225,16 @@ button {
 
 footer {
 	background-color: rgb(81, 81, 81);
+}
+
+footer a {
+	color: rgb(159, 159, 159);
+}
+
+.social-media {
+	float: right;
+}
+
+.social-media p {
+	font-size: 0.25rem;
 }
