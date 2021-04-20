@@ -34,6 +34,8 @@
 				font: 14px Helvetica, Arial, sans-serif;
 			}
 		</style>
+		<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/beb15aab2c05d33762cfce655/de81a24b8cf4a7ea3ad39acde.js");</script>
+
 		<title>Cerberus Cyphers</title>
 	</head>
 
@@ -66,22 +68,22 @@
 			</div>
 			</div>
 				<div class="row hero">
-				<div class="col hero-button">
-				<button
-					onclick="window.location.href='#section-games';"
-					class="button hero-box-btn"
-				>
-					DIVE IN !
-				</button>
-				</div>
-				<div class="col sec-button">
-				<button
-					onclick="window.location.href='#mc_embed_signup_scroll';"
-					class="button secondary-btn"
-				>
-					Join Us
-				</button>
-				</div>				
+					<div class="col hero-button">
+						<button
+							onclick="window.location.href='#section-games';"
+							class="button hero-box-btn"
+						>
+							DIVE IN!
+						</button>
+					</div>
+					<div class="col sec-button">
+						<button
+							onclick="window.location.href='#mc_embed_signup_scroll';"
+							class="button secondary-btn"
+						>
+							Join Us
+						</button>
+					</div>				
 			</div>
 		</header>
 		<div class="container about" id="about">
@@ -100,7 +102,9 @@
 			</div>			
 		</div>
 		<div class="container-fluid section-games" id="section-games">
-			<h2>Games</h2>
+			<div class="row">
+				<h2>Game Zone</h2>
+			</div>
 			<div class="row pig">
 				<video class="vid-pig" width="280" height="200" controls>
 					<source src="/vids/PigGame.mp4" type="video/mp4" /></video
@@ -122,35 +126,22 @@
 			<div class="apps">
 				<h2>Projects Gallery</h2>
 				<div class="row bankist">
-					<div class="col desc">
+					<div class="col-7 desc">
 						<p>
-							Javascript course project site. 
+							Javascript course project site created using  
 							<img
-							src="/img/dev-icons/logo-html5.svg"
-							alt="html"
-							class="html tools"
-							width="16"
-							height="20"
-						/>
-						<img
-							src="/img/dev-icons/logo-css3.svg"
-							alt="css"
-							class="css tools"
-							width="16"
-							height="20"
-						/>
-						<img
 							src="/img/dev-icons/logo-javascript.svg"
 							alt="javascript"
 							class="js tools"
 							width="16"
 							height="20"
-						/><br>
+							/> with DOM manipulation<br>
 
-							<a href="https://cc-bankist.netlify.app/">cc-bankist.netlify.app</a>
+							<a href="https://cc-bankist.netlify.app/">cc-bankist.netlify.app</a><br>
+							<a href="https://github.com/cerberusCyphers/bankist">GitHub repo</a>
 						</p>
 					</div>
-					<div class="col">
+					<div class="col-5">
 					<img
 						loading="lazy"
 						src="/img/projects/bankist.jpg"
@@ -160,7 +151,7 @@
 				</div>
 				</div>
 				<div class="row bandit">
-					<div class="col">
+					<div class="col-5">
 					<img
 						loading="lazy"
 						src="/img/projects/bandit.jpg"
@@ -168,39 +159,10 @@
 						class="img-fluid bandit-img"
 					/>
 				</div>
-				<div class="col desc">
+				<div class="col-7 desc">
 					<p>
 						Blog style responsive website created with 
-						<a href="https://banditsoutdoors.netlify.app/">
-							<img
-								src="/img/dev-icons/logo-html5.svg"
-								alt="html"
-								class="html tools"
-								width="16"
-								height="20"
-							/>
-							<img
-								src="/img/dev-icons/logo-css3.svg"
-								alt="css"
-								class="css tools"
-								width="16"
-								height="20"
-							/>
-							<img
-								src="/img/dev-icons/logo-javascript.svg"
-								alt="javascript"
-								class="js tools"
-								width="16"
-								height="20"
-							/><br>
-							banditsoutdoors.netlify.app</a>
-					</p>
-					</div>
-				</div>
-				<div class="row mapty">
-					<div class="col desc">
-						<p>Javascript course project app build with 
-							<img
+						<img
 							src="/img/dev-icons/logo-html5.svg"
 							alt="html"
 							class="html tools"
@@ -221,11 +183,28 @@
 							width="16"
 							height="20"
 						/><br>
+						<a href="https://banditsoutdoors.netlify.app/">
+							banditsoutdoors.netlify.app</a><br>
+							<a href="https://github.com/cerberusCyphers/bandits_outdoors">GitHub repo</a>
+					</p>
+					</div>
+				</div>
+				<div class="row mapty">
+					<div class="col-7 desc">
+						<p>Javascript course project app build with 							
+						<img
+							src="/img/dev-icons/logo-javascript.svg"
+							alt="javascript"
+							class="js tools"
+							width="16"
+							height="20"
+						/><br>Utilizes Leaflet library<br>
 
-							<a href="https://cc-mapty.netlify.app/">cc-mapty.netlify.app</a>
+							<a href="https://cc-mapty.netlify.app/">cc-mapty.netlify.app</a><br>
+							<a href="https://github.com/cerberusCyphers/mapty">GitHub repo</a>
 						</p>
 					</div>
-					<div class="col">
+					<div class="col-5">
 					<img
 						loading="lazy"
 						src="/img/projects/mapty.jpg"
@@ -235,7 +214,7 @@
 				</div>
 				</div>
 				<div class="row forkify">
-					<div class="col">
+					<div class="col-5">
 					<img
 						loading="lazy"
 						src="/img/projects/forkify.jpg"
@@ -243,7 +222,7 @@
 						class="img-fluid forkify-img"
 					/>
 				</div>
-				<div class="col desc">
+				<div class="col-7 desc">
 					<p>Javascript course project app built with 
 						<img
 						src="/img/dev-icons/logo-html5.svg"
@@ -267,10 +246,42 @@
 						height="20"
 					/><br>
 
-						<a href="https://cc-forkify.netlify.app/">cc-forkify.netlify.app</a>
+						<a href="https://cc-forkify.netlify.app/">cc-forkify.netlify.app</a><br>
+						<a href="https://github.com/cerberusCyphers/forkify">GitHub repo</a>
 					</p>
 				</div>
 				</div>
+				<div class="row omnifood">
+					<div class="col-7 desc">
+						<p>Responsive website course project app build with 							
+							<img
+							src="/img/dev-icons/logo-html5.svg"
+							alt="html"
+							class="html tools"
+							width="16"
+							height="20"
+						/>
+						<img
+							src="/img/dev-icons/logo-css3.svg"
+							alt="css"
+							class="css tools"
+							width="16"
+							height="20"
+						/><br>
+							<a href="https://cc-omnifood.netlify.app/">cc-mapty.netlify.app</a><br>
+							<a href="https://github.com/cerberusCyphers/omnifood">GitHub repo</a>
+						</p>
+					</div>
+					<div class="col-5">
+					<img
+						loading="lazy"
+						src="/img/projects/omnifood.png"
+						alt="omnifood"
+						class="img-fluid omnifood-img"
+					/>
+				</div>
+				</div>
+
 			</div>
 		</section>
 		<div id="mc_embed_signup">
@@ -294,7 +305,7 @@
 						</label>
 						<input
 							type="email"
-							value=""
+							value="Your@Email.com"
 							name="EMAIL"
 							class="email required"
 							id="mce-EMAIL"
@@ -306,7 +317,7 @@
 						</label>
 						<input
 							type="text"
-							value=""
+							value="Your Name"
 							name="FNAME"
 							class="required"
 							id="mce-FNAME"
@@ -314,7 +325,12 @@
 					</div>
 					<div class="mc-field-group">
 						<label for="mce-MMERGE2">Your Request </label>
-						<input type="text" value="" name="MMERGE2" id="mce-MMERGE2" />
+						<input 
+							type="text" 
+							value="Project Description (optional)" 
+							name="MMERGE2" 
+							id="mce-MMERGE2" 
+						/>
 					</div>
 					<div id="mce-responses" class="clear">
 						<div
@@ -410,10 +426,9 @@
 			</div>
 		</div>
 		<div class="row">
-		<div class="col copy">
-			<p>Copyright © Cerberus Cyphers 2021. All rights reserved.</p><br />
-			
-		</div>
+			<div class="col copy">
+				<p>Copyright © Cerberus Cyphers 2021. All rights reserved.</p>
+			</div>
 		</div>
 	</footer>
 	<script

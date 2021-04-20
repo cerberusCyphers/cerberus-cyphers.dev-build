@@ -1,0 +1,329 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Titillium Web';
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #961826;
+}
+
+h1 {
+	color: azure;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: azure;
+}
+
+.hidden {
+	display: none;
+}
+
+a {
+	color: azure;
+}
+
+a:hover,
+a:active {
+	color: #619e23;
+	text-decoration: none;
+}
+
+/*-------------------------*/
+
+/*---------HEADER----------*/
+
+/*-------------------------*/
+
+header {
+	background-image: linear-gradient(
+			hsla(0, 0%, 0%, 0.801),
+			hsla(0, 72%, 43%, 0.801)
+		),
+		url('CCScreens.HASH_REF_db8cf56c1c236f0d32d80d3027e8f9b9.jpg');
+	background-size: contain;
+	background-position: unset;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 35vh;
+}
+
+.mobile-logo {
+	width: 60px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 5%;
+	margin-top: 4%;
+}
+
+.main-logo {
+	display: none;
+}
+
+.hero-text-box,
+.hero {
+}
+
+/*-------------------------*/
+
+/*---------NAVIGATION------*/
+
+/*-------------------------*/
+
+/*---------MOBILE------*/
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.hamburger {
+	background-color: #619e23;
+	border-radius: 40px;
+	width: 50px;
+	padding: 2px;
+	margin-top: 3%;
+	position: fixed;
+	z-index: 9999;
+}
+
+.mobile-nav {
+	margin-top: 4.5rem;
+	font-weight: 600;
+	position: fixed;
+	z-index: 9999;
+}
+
+.mobile-nav li {
+	align-content: right;
+	padding: 2px;
+	border: 2px solid #619e23;
+	background-color: #619e23b6;
+	width: 5.5rem;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+.mobile-nav a:link,
+.mobile-nav a:visited {
+	color: crimson;
+}
+
+.mobile-nav a:hover,
+.mobile-nav a:active {
+	color: #619e23;
+	transition: border-bottom 0.4s, color 0.2s;
+}
+
+/* -------------------------------------------- */
+
+/* -------------- BUTTONS --------------*/
+
+/* --------------------------------------------*/
+
+button {
+	display: inline-block;
+	border-radius: 200px;
+	text-align: center;
+	word-wrap: none;
+	margin-top: 3rem;
+	cursor: pointer;
+}
+
+.hero-button {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 1rem;
+}
+
+.hero-box-btn {
+	color: #1b1b1b;
+	background-color: #619e23;
+	font-size: 0.9rem;
+	font-weight: 700;
+	width: 6em;
+	height: 2.5em;
+	justify-content: center;
+}
+
+.hero-box-btn:link,
+.hero-box-btn:visited {
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.hero-box-btn:hover,
+.hero-box-btn:active {
+	background-color: #4e801d;
+}
+
+.secondary-btn {
+	color: #619e23;
+	background-color: #1b1b1b85;
+	width: 5em;
+	height: 2.2em;
+}
+
+.secondary-btn:hover,
+.secondary-btn:active {
+	background-color: #619e23cc;
+	color: #1b1b1b;
+}
+
+/*-------------------------*/
+
+/*---------ABOUT-----------*/
+
+/*-------------------------*/
+
+.about {
+	color: azure;
+	padding: 1rem;
+}
+
+/*-------------------------*/
+
+/*---------GAMES-----------*/
+
+/*-------------------------*/
+
+.section-games {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #424242;
+	font-weight: 600;
+}
+
+.section-games h2 {
+	color: crimson;
+	margin-left: 0.5rem;
+}
+
+.section-games video {
+	width: 50%;
+	height: auto;
+}
+
+.pig,
+.guess {
+	color: crimson;
+	margin: 0.5rem;
+	padding-top: 3rem;
+	justify-content: center;
+}
+
+/*-------------------------*/
+
+/*---------PROJECTS--------*/
+
+/*-------------------------*/
+
+.section-projects {
+	padding-bottom: 0.5rem;
+	background-color: #961826;
+}
+
+.section-projects a {
+	color: #af7115;
+}
+
+.desc {
+	display: flex;
+	color: mintcream;
+	background-color: #424242;
+	border-radius: 4%;
+	justify-content: center;
+}
+
+.desc p {
+	align-self: center;
+}
+
+.bankist,
+.bandit,
+.mapty,
+.forkify,
+.omnifood img {
+	border-radius: 6%;
+}
+
+.bankist,
+.bandit,
+.mapty,
+.forkify,
+.omnifood {
+	margin-bottom: 0.5rem;
+}
+
+.tools {
+	border-radius: 10%;
+}
+
+.html {
+	background-color: red;
+}
+
+.css {
+	background-color: rgb(0, 94, 255);
+}
+
+.js {
+	background-color: yellow;
+}
+
+/*-------------------------*/
+
+/*---------MAIL-LIST-------*/
+
+/*-------------------------*/
+
+#mc_embed_signup {
+	background-image: linear-gradient(
+			rgba(190, 91, 91, 0.801),
+			rgba(190, 91, 91, 0.801)
+		),
+		url(white_logo_transparent_background.HASH_REF_8523596adf1ebb4109bbbee47d0efc4f.png);
+	background-size: cover;
+}
+
+.email-button {
+	background-color: #bebe5b;
+	cursor: pointer;
+}
+
+/*-------------------------*/
+
+/*---------FOOTER----------*/
+
+/*-------------------------*/
+
+footer {
+	background-color: rgb(81, 81, 81);
+}
+
+footer a {
+	color: rgb(159, 159, 159);
+}
+
+.social-media {
+	float: right;
+}
+
+.social-media p {
+	font-size: 0.25rem;
+}
+
+/*# sourceMappingURL=index.HASH_REF_ba6b9223712ed284a4c2f56ae302fa29.css.map */
