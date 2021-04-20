@@ -48,7 +48,7 @@ a:active {
 
 header {
 	background-image: linear-gradient(#000000cc, #961826cc),
-		url('CCScreens.27e8f9b9.jpg');
+		url('2541fc1b52d24d45a5f9adb06def7643');
 	background-size: contain;
 	background-position: unset;
 	background-repeat: no-repeat;
@@ -293,7 +293,7 @@ button {
 			rgba(190, 91, 91, 0.801),
 			rgba(190, 91, 91, 0.801)
 		),
-		url(white_logo_transparent_background.7d0efc4f.png);
+		url(d7377a3af6b3da02c6c5ecae2219b741);
 	background-size: cover;
 }
 
@@ -355,5 +355,3 @@ footer a {
 .copy p {
 	padding-top: 2rem;
 }
-
-/*# sourceMappingURL=index.e302fa29.css.map */

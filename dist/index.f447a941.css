@@ -33,9 +33,9 @@
 		width: 80%;
 		border-radius: 45%;
 		height: auto;
-		margin: 2%;
+		margin: 4% 2% 2% 2%;
 		background-color: black;
-		box-shadow: 0 0 8px 8px rgba(26, 26, 26, 0.63) inset;
+		box-shadow: 0 0 8px 8px #1a1a1aa1 inset;
 	}
 
 	.nav {
@@ -77,6 +77,10 @@
 		width: 6.5em;
 		height: 2.5em;
 	}
+
+	.foot-icons img {
+		width: 30px;
+	}
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -87,6 +91,10 @@
 
 	h1 {
 		font-size: 3.5rem;
+	}
+
+	.main-logo {
+		margin-top: 1.2rem;
 	}
 
 	body {
@@ -129,6 +137,10 @@
 	.guess video {
 		width: 75%;
 		height: auto;
+	}
+
+	.foot-icons img {
+		width: 40px;
 	}
 }
 

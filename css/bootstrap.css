@@ -295,10 +295,42 @@ footer a {
 	color: rgb(159, 159, 159);
 }
 
+.foot-icons {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+}
+
+.foot-icons img {
+	width: 20px;
+	margin-right: 1rem;
+}
+
+.foot-links {
+	display: flex;
+	justify-content: center;
+}
+
 .social-media {
-	float: right;
+	display: flex;
+	justify-content: center;
+}
+
+.social-media a {
+	padding-right: 0.5rem;
 }
 
 .social-media p {
 	font-size: 0.25rem;
+	align-self: flex-end;
+	margin-bottom: 0;
+}
+
+.copy {
+	display: flex;
+	justify-content: center;
+}
+
+.copy p {
+	padding-top: 2rem;
 }
