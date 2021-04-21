@@ -1,15 +1,13 @@
-'use strict'
-const hamburger = document.querySelector('.hamburger');
-const mainNav = document.querySelector('.main-nav');
+"use strict";
+const hamburger = document.querySelector(".hamburger");
+const mobileNav = document.querySelector(".mobile-nav");
+const mobileLogo = document.querySelector(".mobile-logo");
+const nav = document.querySelector(".nav");
 
-console.log(hamburger);
-
-hamburger.addEventListener('click', function(e) {
-    mainNav.classList.toggle('hidden');
-    console.log('click');
+hamburger.addEventListener("click", function (e) {
+  mobileNav.classList.toggle("hidden");
 });
 
-mainNav.addEventListener('click', function(e) {
-    mainNav.classList.add('hidden');
-    console.log('click');
+mobileNav.addEventListener("click", function (e) {
+  mobileNav.classList.add("hidden");
 });

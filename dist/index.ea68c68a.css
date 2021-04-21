@@ -14,6 +14,10 @@ html {
 	width: 100vw;
 }
 
+body {
+	background-color: maroon;
+}
+
 h1 {
 	color: #fff;
 	font-size: 1.5rem;
@@ -158,13 +162,12 @@ button {
 
 /* -------------------------------------------- */
 
-/* -------------- UNDER CONSTRUCTION --------------*/
+/* -------------- ABOUT --------------*/
 
 /* --------------------------------------------*/
 
 .about {
 	display: block;
-	background-color: maroon;
 	color: mintcream;
 	font-weight: 500;
 	justify-items: center;
@@ -247,18 +250,9 @@ button {
 
 /* --------------------------------------------*/
 
-/* .tools img {
-	width: 0.1rem;
-}
-.css img {
+.css {
 	color: blue;
 }
-.html img {
-	color: red;
-}
-.js img {
-	color: yellow;
-} */
 
 /* -------------------------------------------- */
 

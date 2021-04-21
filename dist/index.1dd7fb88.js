@@ -442,21 +442,20 @@ id) /*: string*/
 }
 
 },{}],"7nHQo":[function(require,module,exports) {
-'use strict'
-const hamburger = document.querySelector('.hamburger');
-const mainNav = document.querySelector('.main-nav');
+"use strict";
+const hamburger = document.querySelector(".hamburger");
+const mobileNav = document.querySelector(".mobile-nav");
+const mobileLogo = document.querySelector(".mobile-logo");
+const nav = document.querySelector(".nav");
 
-console.log(hamburger);
-
-hamburger.addEventListener('click', function(e) {
-    mainNav.classList.toggle('hidden');
-    console.log('click');
+hamburger.addEventListener("click", function (e) {
+  mobileNav.classList.toggle("hidden");
 });
 
-mainNav.addEventListener('click', function(e) {
-    mainNav.classList.add('hidden');
-    console.log('click');
+mobileNav.addEventListener("click", function (e) {
+  mobileNav.classList.add("hidden");
 });
+
 },{}]},["48KVj","7nHQo"], "7nHQo", "parcelRequiref88e")
 
 //# sourceMappingURL=index.1dd7fb88.js.map
