@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="">
+		<link rel="stylesheet" href="/index.HASH_REF_ba6b9223712ed284a4c2f56ae302fa29.css">
+		<link rel="stylesheet" href="/index.HASH_REF_f58cd956237c8d5d265c1bb3f447a941.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
+		<script src="/index.HASH_REF_afb742f2e085b5374b064e171dd7fb88.js" defer=""></script>
+		<link rel="icon shortcut" type="image/x-icon" href="/1614305134.HASH_REF_c4de54848bf00b1691df8f0dea66158d.ico">
+		<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+		<style>#mc_embed_signup {
+				clear: left;
+				font: 14px Helvetica, Arial, sans-serif;
+			}
+</style>
+		<script id="mcjs">// modules are defined as an array
+// [ module function, map of requires ]
+//
+// map of requires is short require name -> numeric require
+//
+// anything defined in a previous bundle is accessed via the
+// orig method which is the require for previous bundles
+
+(function(modules, entry, mainEntry, parcelRequireName, globalName) {
+  /* eslint-disable no-undef */
+  var globalObject =
+    typeof globalThis !== 'undefined'
+      ? globalThis
+      : typeof self !== 'undefined'
+      ? self
+      : typeof window !== 'undefined'
+      ? window
+      : typeof global !== 'undefined'
+      ? global
+      : {};
+  /* eslint-enable no-undef */
+
+  // Save the require from previous bundle to this closure if any
+  var previousRequire =
+    typeof globalObject[parcelRequireName] === 'function' &&
+    globalObject[parcelRequireName];
+
+  var cache = previousRequire.cache || {};
+  // Do not use `require` to prevent Webpack from trying to bundle this call
+  var nodeRequire =
+    typeof module !== 'undefined' &&
+    typeof module.require === 'function' &&
+    module.require.bind(module);
+
+  function newRequire(name, jumped) {
+    if (!cache[name]) {
+      if (!modules[name]) {
+        // if we cannot find the module within our internal map or
+        // cache jump to the current global require ie. the last bundle
+        // that was added to the page.
+        var currentRequire =
+          typeof globalObject[parcelRequireName] === 'function' &&
+          globalObject[parcelRequireName];
+        if (!jumped && currentRequire) {
+          return currentRequire(name, true);
+        }
+
+        // If there are other bundles on this page the require from the
+        // previous one is saved to 'previousRequire'. Repeat this as
+        // many times as there are bundles until the module is found or
+        // we exhaust the require chain.
+        if (previousRequire) {
+          return previousRequire(name, true);
+        }
+
+        // Try the node require function if it exists.
+        if (nodeRequire && typeof name === 'string') {
+          return nodeRequire(name);
+        }
+
+        var err = new Error("Cannot find module '" + name + "'");
+        err.code = 'MODULE_NOT_FOUND';
+        throw err;
+      }
+
+      localRequire.resolve = resolve;
+      localRequire.cache = {};
+
+      var module = (cache[name] = new newRequire.Module(name));
+
+      modules[name][0].call(
+        module.exports,
+        localRequire,
+        module,
+        module.exports,
+        this
+      );
+    }
+
+    return cache[name].exports;
+
+    function localRequire(x) {
+      return newRequire(localRequire.resolve(x));
+    }
+
+    function resolve(x) {
+      return modules[name][1][x] || x;
+    }
+  }
+
+  function Module(moduleName) {
+    this.id = moduleName;
+    this.bundle = newRequire;
+    this.exports = {};
+  }
+
+  newRequire.isParcelRequire = true;
+  newRequire.Module = Module;
+  newRequire.modules = modules;
+  newRequire.cache = cache;
+  newRequire.parent = previousRequire;
+  newRequire.register = function(id, exports) {
+    modules[id] = [
+      function(require, module) {
+        module.exports = exports;
+      },
+      {},
+    ];
+  };
+
+  Object.defineProperty(newRequire, 'root', {
+    get: function() {
+      return globalObject[parcelRequireName];
+    },
+  });
+
+  globalObject[parcelRequireName] = newRequire;
+
+  for (var i = 0; i < entry.length; i++) {
+    newRequire(entry[i]);
+  }
+
+  if (mainEntry) {
+    // Expose entry point to Node, AMD or browser globals
+    // Based on https://github.com/ForbesLindesay/umd/blob/master/template.js
+    var mainExports = newRequire(mainEntry);
+
+    // CommonJS
+    if (typeof exports === 'object' && typeof module !== 'undefined') {
+      module.exports = mainExports;
+
+      // RequireJS
+    } else if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return mainExports;
+      });
+
+      // <script>
+    } else if (globalName) {
+      this[globalName] = mainExports;
+    }
+  }
+})({"1A9Lb":[function(require,module,exports) {
+var HMR_HOST = null;
+var HMR_PORT = 1234;
+var HMR_SECURE = false;
+var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
+module.bundle.HMR_BUNDLE_ID = "65eeb244007d06ccaab2a1e97434074a";
+// @flow
+/*global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE*/
+/*::
+import type {
+HMRAsset,
+HMRMessage,
+} from '@parcel/reporter-dev-server/src/HMRServer.js';
+interface ParcelRequire {
+(string): mixed;
+cache: {|[string]: ParcelModule|};
+hotData: mixed;
+Module: any;
+parent: ?ParcelRequire;
+isParcelRequire: true;
+modules: {|[string]: [Function, {|[string]: string|}]|};
+HMR_BUNDLE_ID: string;
+root: ParcelRequire;
+}
+interface ParcelModule {
+hot: {|
+data: mixed,
+accept(cb: (Function) => void): void,
+dispose(cb: (mixed) => void): void,
+// accept(deps: Array<string> | string, cb: (Function) => void): void,
+// decline(): void,
+_acceptCallbacks: Array<(Function) => void>,
+_disposeCallbacks: Array<(mixed) => void>,
+|};
+}
+declare var module: {bundle: ParcelRequire, ...};
+declare var HMR_HOST: string;
+declare var HMR_PORT: string;
+declare var HMR_ENV_HASH: string;
+declare var HMR_SECURE: boolean;
+*/
+var OVERLAY_ID = '__parcel__error__overlay__';
+var OldModule = module.bundle.Module;
+function Module(moduleName) {
+  OldModule.call(this, moduleName);
+  this.hot = {
+    data: module.bundle.hotData,
+    _acceptCallbacks: [],
+    _disposeCallbacks: [],
+    accept: function (fn) {
+      this._acceptCallbacks.push(fn || (function () {}));
+    },
+    dispose: function (fn) {
+      this._disposeCallbacks.push(fn);
+    }
+  };
+  module.bundle.hotData = undefined;
+}
+module.bundle.Module = Module;
+var checkedAssets, /*: {|[string]: boolean|}*/
+acceptedAssets, /*: {|[string]: boolean|}*/
+/*: {|[string]: boolean|}*/
+assetsToAccept;
+function getHostname() {
+  return HMR_HOST || (location.protocol.indexOf('http') === 0 ? location.hostname : 'localhost');
+}
+function getPort() {
+  return HMR_PORT || location.port;
+}
+// eslint-disable-next-line no-redeclare
+var parent = module.bundle.parent;
+if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
+  var hostname = getHostname();
+  var port = getPort();
+  var protocol = HMR_SECURE || location.protocol == 'https:' && !(/localhost|127.0.0.1|0.0.0.0/).test(hostname) ? 'wss' : 'ws';
+  var ws = new WebSocket(protocol + '://' + hostname + (port ? ':' + port : '') + '/');
+  // $FlowFixMe
+  ws.onmessage = function (event) /*: {data: string, ...}*/
+  {
+    checkedAssets = {
+      /*: {|[string]: boolean|}*/
+    };
+    acceptedAssets = {
+      /*: {|[string]: boolean|}*/
+    };
+    assetsToAccept = [];
+    var data = /*: HMRMessage*/
+    JSON.parse(event.data);
+    if (data.type === 'update') {
+      // Remove error overlay if there is one
+      removeErrorOverlay();
+      let assets = data.assets.filter(asset => asset.envHash === HMR_ENV_HASH);
+      // Handle HMR Update
+      var handled = false;
+      assets.forEach(asset => {
+        var didAccept = asset.type === 'css' || asset.type === 'js' && hmrAcceptCheck(module.bundle.root, asset.id, asset.depsByBundle);
+        if (didAccept) {
+          handled = true;
+        }
+      });
+      if (handled) {
+        console.clear();
+        assets.forEach(function (asset) {
+          hmrApply(module.bundle.root, asset);
+        });
+        for (var i = 0; i < assetsToAccept.length; i++) {
+          var id = assetsToAccept[i][1];
+          if (!acceptedAssets[id]) {
+            hmrAcceptRun(assetsToAccept[i][0], id);
+          }
+        }
+      } else {
+        window.location.reload();
+      }
+    }
+    if (data.type === 'error') {
+      // Log parcel errors to console
+      for (let ansiDiagnostic of data.diagnostics.ansi) {
+        let stack = ansiDiagnostic.codeframe ? ansiDiagnostic.codeframe : ansiDiagnostic.stack;
+        console.error('🚨 [parcel]: ' + ansiDiagnostic.message + '\n' + stack + '\n\n' + ansiDiagnostic.hints.join('\n'));
+      }
+      // Render the fancy html overlay
+      removeErrorOverlay();
+      var overlay = createErrorOverlay(data.diagnostics.html);
+      // $FlowFixMe
+      document.body.appendChild(overlay);
+    }
+  };
+  ws.onerror = function (e) {
+    console.error(e.message);
+  };
+  ws.onclose = function (e) {
+    if (undefined !== 'test') {
+      console.warn('[parcel] 🚨 Connection to the HMR server was lost');
+    }
+  };
+}
+function removeErrorOverlay() {
+  var overlay = document.getElementById(OVERLAY_ID);
+  if (overlay) {
+    overlay.remove();
+    console.log('[parcel] ✨ Error resolved');
+  }
+}
+function createErrorOverlay(diagnostics) {
+  var overlay = document.createElement('div');
+  overlay.id = OVERLAY_ID;
+  let errorHTML = '<div style="background: black; opacity: 0.85; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; font-family: Menlo, Consolas, monospace; z-index: 9999;">';
+  for (let diagnostic of diagnostics) {
+    let stack = diagnostic.codeframe ? diagnostic.codeframe : diagnostic.stack;
+    errorHTML += `
+      <div>
+        <div style="font-size: 18px; font-weight: bold; margin-top: 20px;">
+          🚨 ${diagnostic.message}
+        </div>
+        <pre>
+          ${stack}
+        </pre>
+        <div>
+          ${diagnostic.hints.map(hint => '<div>' + hint + '</div>').join('')}
+        </div>
+      </div>
+    `;
+  }
+  errorHTML += '</div>';
+  overlay.innerHTML = errorHTML;
+  return overlay;
+}
+function getParents(bundle, id) /*: Array<[ParcelRequire, string]>*/
+{
+  var modules = bundle.modules;
+  if (!modules) {
+    return [];
+  }
+  var parents = [];
+  var k, d, dep;
+  for (k in modules) {
+    for (d in modules[k][1]) {
+      dep = modules[k][1][d];
+      if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
+        parents.push([bundle, k]);
+      }
+    }
+  }
+  if (bundle.parent) {
+    parents = parents.concat(getParents(bundle.parent, id));
+  }
+  return parents;
+}
+function updateLink(link) {
+  var newLink = link.cloneNode();
+  newLink.onload = function () {
+    if (link.parentNode !== null) {
+      // $FlowFixMe
+      link.parentNode.removeChild(link);
+    }
+  };
+  newLink.setAttribute('href', // $FlowFixMe
+  link.getAttribute('href').split('?')[0] + '?' + Date.now());
+  // $FlowFixMe
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+var cssTimeout = null;
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      // $FlowFixMe[incompatible-type]
+      var href = /*: string*/
+      links[i].getAttribute('href');
+      var hostname = getHostname();
+      var servedFromHMRServer = hostname === 'localhost' ? new RegExp('^(https?:\\/\\/(0.0.0.0|127.0.0.1)|localhost):' + getPort()).test(href) : href.indexOf(hostname + ':' + getPort());
+      var absolute = (/^https?:\/\//i).test(href) && href.indexOf(window.location.origin) !== 0 && !servedFromHMRServer;
+      if (!absolute) {
+        updateLink(links[i]);
+      }
+    }
+    cssTimeout = null;
+  }, 50);
+}
+function hmrApply(bundle, /*: ParcelRequire*/
+asset) /*:  HMRAsset*/
+{
+  var modules = bundle.modules;
+  if (!modules) {
+    return;
+  }
+  if (asset.type === 'css') {
+    reloadCSS();
+    return;
+  }
+  let deps = asset.depsByBundle[bundle.HMR_BUNDLE_ID];
+  if (deps) {
+    var fn = new Function('require', 'module', 'exports', asset.output);
+    modules[asset.id] = [fn, deps];
+  } else if (bundle.parent) {
+    hmrApply(bundle.parent, asset);
+  }
+}
+function hmrAcceptCheck(bundle, /*: ParcelRequire*/
+id, /*: ParcelRequire*/
+/*: string*/
+depsByBundle) /*: ?{ [string]: { [string]: string } }*/
+{
+  var modules = bundle.modules;
+  if (!modules) {
+    return;
+  }
+  if (depsByBundle && !depsByBundle[bundle.HMR_BUNDLE_ID]) {
+    // If we reached the root bundle without finding where the asset should go,
+    // there's nothing to do. Mark as "accepted" so we don't reload the page.
+    if (!bundle.parent) {
+      return true;
+    }
+    return hmrAcceptCheck(bundle.parent, id, depsByBundle);
+  }
+  if (checkedAssets[id]) {
+    return;
+  }
+  checkedAssets[id] = true;
+  var cached = bundle.cache[id];
+  assetsToAccept.push([bundle, id]);
+  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
+    return true;
+  }
+  return getParents(module.bundle.root, id).some(function (v) {
+    return hmrAcceptCheck(v[0], v[1], null);
+  });
+}
+function hmrAcceptRun(bundle, /*: ParcelRequire*/
+id) /*: string*/
+{
+  var cached = bundle.cache[id];
+  bundle.hotData = {};
+  if (cached && cached.hot) {
+    cached.hot.data = bundle.hotData;
+  }
+  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
+    cached.hot._disposeCallbacks.forEach(function (cb) {
+      cb(bundle.hotData);
+    });
+  }
+  delete bundle.cache[id];
+  bundle(id);
+  cached = bundle.cache[id];
+  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
+    cached.hot._acceptCallbacks.forEach(function (cb) {
+      var assetsToAlsoAccept = cb(function () {
+        return getParents(module.bundle.root, id);
+      });
+      if (assetsToAlsoAccept && assetsToAccept.length) {
+        assetsToAccept.push.apply(assetsToAccept, assetsToAlsoAccept);
+      }
+    });
+  }
+  acceptedAssets[id] = true;
+}
+
+},{}],"72u9h":[function(require,module,exports) {
+!(function () {
+				var e, c, a, t;
+				(e = document),
+					(c = 'script'),
+					(a = e.createElement(c)),
+					(t = e.getElementsByTagName(c)[0]),
+					(a.async = 1),
+					(a.src =
+						'https://chimpstatic.com/mcjs-connected/js/users/beb15aab2c05d33762cfce655/de81a24b8cf4a7ea3ad39acde.js'),
+					t.parentNode.insertBefore(a, t);
+			})();
+},{}]},["1A9Lb","72u9h"], "72u9h", "parcelRequiref88e")
+
+</script>
+		<title>Cerberus Cyphers</title>
+	</head>
+	<body>
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-4">
+						<img src="/white_logo_color_background_square.HASH_REF_dea83045cfd3f6a54e9c2111bd132b31.jpg" alt="temp logo" class="mobile-logo">
+						<img src="/logo_transparent_background.HASH_REF_ab2e47e1464f1d88b3faf63852ddc4f8.png" class="main-logo">
+					</div>
+					<div class="col-8 nav">
+						<img src="/more.HASH_REF_75929cb446caa2577a74a122c54f9071.png" class="hamburger">
+						<ul class="hidden mobile-nav">
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#section-games">Games</a></li>
+							<li><a href="#section-projects">Projects</a></li>
+							<li><a href="#mc_embed_signup">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="hero-text-box row">
+				<div class="col-12">
+					<h1>Cerberus Cyphers<br>Developing for you!</h1>
+				</div>
+			</div>
+			<div class="hero row">
+				<div class="col hero-button">
+					<button onclick="window.location.href='#section-games';" class="button hero-box-btn">
+						DIVE IN!
+					</button>
+				</div>
+				<div class="col sec-button">
+					<button onclick="window.location.href='#mc_embed_signup_scroll';" class="button secondary-btn">
+						Join Us
+					</button>
+				</div>
+			</div>
+		</header>
+		<div class="about container" id="about">
+			<h2>About Us</h2>
+			<div class="row">
+				<div class="col">
+					<p>
+						We are currently working on this site. In the meantime, check out
+						one of our works here:
+						<a href="https://banditsoutdoors.netlify.app/">banditsoutdoors.netlify.com</a>
+					</p>
+				</div>
+				<div class="col">
+					<img src="/construction.HASH_REF_521ee607c5e559aa50ad6ec60516f5cb.jfif" alt="contruction image" width="300">
+				</div>
+				<p></p>
+			</div>
+		</div>
+		<div class="container-fluid section-games" id="section-games">
+			<div class="row"><h2>Game Zone</h2></div>
+			<div class="pig row">
+				<video class="vid-pig" width="280" height="200" controls="">
+					<source src="/PigGame.HASH_REF_e5e00879d92ef88f4601c955509dd64c.mp4" type="video/mp4"></video><br>
+				<p>
+					Two players take turns rolling dice to reach 100 points for victory.
+				</p>
+				<a class="play-btn" href="https://cc-dice-pig.netlify.app/">Play now!</a>
+			</div>
+			<div class="guess row">
+				<video class="vid-guess" width="280" height="200" controls="">
+					<source src="/GuessNumber.HASH_REF_e917fe7c2be5e21acd540a2506a1e936.mp4" type="video/mp4"></video><br>
+				<p>
+					Test your number guessing ability. Then try to beat your previous high
+					score.
+				</p>
+				<a class="play-btn" href="https://cc-guess-number.netlify.app/">Try it out!</a>
+			</div>
+		</div>
+		<section class="container-fluid section-projects" id="section-projects">
+			<div class="apps">
+				<h2>Projects Gallery</h2>
+				<div class="bankist row">
+					<div class="col-7 desc">
+						<p>
+							Javascript course project site created using
+							<img src="/logo-javascript.HASH_REF_f5e395318319cc0d4e9c4152bcae311e.svg" alt="javascript" class="js tools" width="16" height="20">
+							with DOM manipulation<br>
+							See more here: <br>
+							<a href="https://cc-bankist.netlify.app/">cc-bankist.netlify.app</a><br>
+							<a href="https://github.com/cerberusCyphers/bankist">GitHub repo</a>
+						</p>
+					</div>
+					<div class="col-5">
+						<img loading="lazy" src="/bankist.HASH_REF_ce02c9159a083c8a275e1b0cef8c2582.jpg" alt="bankist" class="bankist-img img-fluid">
+					</div>
+				</div>
+				<div class="bandit row">
+					<div class="col-5">
+						<img loading="lazy" src="/bandit.HASH_REF_7330e9cb13dfb0ac194fadf7a3b0759f.jpg" alt="banditsoutdoors" class="bandit-img img-fluid">
+					</div>
+					<div class="col-7 desc">
+						<p>
+							Blog style responsive website created with
+							<img src="/logo-html5.HASH_REF_f45fac2de98b7483ea53a164c2811bdf.svg" alt="html" class="html tools" width="16" height="20">
+							<img src="/logo-css3.HASH_REF_cb0a56d6dd9766d1798c6c9607ccc0a4.svg" alt="css" class="css tools" width="16" height="20">
+							<img src="/logo-javascript.HASH_REF_f5e395318319cc0d4e9c4152bcae311e.svg" alt="javascript" class="js tools" width="16" height="20"><br>
+							See more here: <br>
+							<a href="https://banditsoutdoors.netlify.app/">
+								banditsoutdoors.netlify.app</a><br>
+							<a href="https://github.com/cerberusCyphers/bandits_outdoors">GitHub repo</a>
+						</p>
+					</div>
+				</div>
+				<div class="mapty row">
+					<div class="col-7 desc">
+						<p>
+							Javascript course project app build with
+							<img src="/logo-javascript.HASH_REF_f5e395318319cc0d4e9c4152bcae311e.svg" alt="javascript" class="js tools" width="16" height="20"><br>Utilizes Leaflet library<br>
+							See more here: <br>
+							<a href="https://cc-mapty.netlify.app/">cc-mapty.netlify.app</a><br>
+							<a href="https://github.com/cerberusCyphers/mapty">GitHub repo</a>
+						</p>
+					</div>
+					<div class="col-5">
+						<img loading="lazy" src="/mapty.HASH_REF_1071f62e6a3d3467580de2e9fda458a9.jpg" alt="mapty" class="img-fluid mapty-img">
+					</div>
+				</div>
+				<div class="forkify row">
+					<div class="col-5">
+						<img loading="lazy" src="/forkify.HASH_REF_4f8c855dc179c19c85c1296822d52c5f.jpg" alt="forkify" class="forkify-img img-fluid">
+					</div>
+					<div class="col-7 desc">
+						<p>
+							Javascript course project app built with
+							<img src="/logo-html5.HASH_REF_f45fac2de98b7483ea53a164c2811bdf.svg" alt="html" class="html tools" width="16" height="20">
+							<img src="/logo-css3.HASH_REF_cb0a56d6dd9766d1798c6c9607ccc0a4.svg" alt="css" class="css tools" width="16" height="20">
+							<img src="/logo-javascript.HASH_REF_f5e395318319cc0d4e9c4152bcae311e.svg" alt="javascript" class="js tools" width="16" height="20"><br>
+							See more here: <br>
+							<a href="https://cc-forkify.netlify.app/">cc-forkify.netlify.app</a><br>
+							<a href="https://github.com/cerberusCyphers/forkify">GitHub repo</a>
+						</p>
+					</div>
+				</div>
+				<div class="omnifood row">
+					<div class="col-7 desc">
+						<p>
+							Responsive website course project app build with
+							<img src="/logo-html5.HASH_REF_f45fac2de98b7483ea53a164c2811bdf.svg" alt="html" class="html tools" width="16" height="20">
+							<img src="/logo-css3.HASH_REF_cb0a56d6dd9766d1798c6c9607ccc0a4.svg" alt="css" class="css tools" width="16" height="20"><br>
+							See more here: <br>
+							<a href="https://cc-omnifood.netlify.app/">cc-omnifood.netlify.app</a><br>
+							<a href="https://github.com/cerberusCyphers/omnifood">GitHub repo</a>
+						</p>
+					</div>
+					<div class="col-5">
+						<img loading="lazy" src="/omnifood.HASH_REF_0f360ec9c97d44a88a2550a4132eb8ed.png" alt="omnifood" class="img-fluid omnifood-img">
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="container-fluid foot-icons">
+			<div class="foot-row row">
+				<div class="col-6 foot-links">
+					<a href="#"><img src="/ios-home.HASH_REF_228a031a8a0b70c39f8911ca499b8883.svg" alt="home" class="foot-img"></a>
+					<a href="#section-games"><img src="/ios-apps.HASH_REF_e11a94321a2d6bc4d767bef54808584f.svg" alt="apps" class="foot-img"></a>
+				</div>
+				<div class="col-6 social-media">
+					<a href="https://www.facebook.com/Cerberus-Cyphers-108534644627866" class="icon"><img src="/045-facebook.HASH_REF_c0302c5d3a2651e9e65992df7c38ba78.png"></a>
+					<a href="https://www.linkedin.com/in/craig-colwell-767689125/" class="icon"><img src="/031-linkedin.HASH_REF_89746d8451b42f4491ba27087457196b.png"></a>
+					<a href="https://github.com/cerberusCyphers" class="icon"><img src="/039-github.HASH_REF_1658e38f2ae47013d87c4ac7be09b05e.png"></a>
+					<a href="https://api.whatsapp.com/send?phone=18456258360" class="icon"><img src="/007-whatsapp.HASH_REF_950c424753a0e392b9f24e54ac37c2fe.png"></a>
+					<p class="attribute">
+						Icons made by
+						<a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+						from
+						<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+					</p>
+				</div>
+			</div>
+			<div class="copyright row">
+				<div class="col copy">
+					<p>Copyright © Cerberus Cyphers 2021. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin=""></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin=""></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin=""></script>
+	</body>
+</html>

@@ -47,7 +47,7 @@ header {
 	background-image: linear-gradient(#000000cc, #961826cc),
 		url('img/CCScreens.jpg');
 	background-size: contain;
-	background-position: unset;
+	background-position: 50% 30%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: 35vh;
@@ -115,7 +115,7 @@ header {
 .mobile-nav a:hover,
 .mobile-nav a:active {
 	color: #619e23;
-	transition: border-bottom 0.2s, color 0.2s;
+	transition: border-bottom 0.4s, color 0.2s;
 }
 
 /* -------------------------------------------- */
@@ -196,7 +196,7 @@ button {
 }
 
 .section-games h2 {
-	color: crimson;
+	color: white;
 	margin-left: 0.5rem;
 }
 
@@ -207,10 +207,19 @@ button {
 
 .pig,
 .guess {
-	color: crimson;
+	color: white;
 	margin: 0.5rem;
 	padding-top: 3rem;
 	justify-content: center;
+}
+
+.play-btn {
+	background-color: #961826;
+	border-radius: 10px;
+	width: 10rem;
+	height: 3rem;
+	text-align: center;
+	color: #76ca21;
 }
 /*-------------------------*/
 /*---------PROJECTS--------*/
@@ -221,9 +230,9 @@ button {
 	background-color: #961826;
 }
 
-.section-projects a {
+/* .section-projects a {
 	color: #af7115;
-}
+} */
 
 .desc {
 	display: flex;
