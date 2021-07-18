@@ -1,0 +1,8 @@
+Change header layout to grid and incorporate navigation.
+
+Change .section margin to padding.
+
+Try checkbox hack as cue to gate transition.
+
+Make contact section.
+
