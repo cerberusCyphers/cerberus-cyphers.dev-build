@@ -8,9 +8,10 @@
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
 		<link rel="stylesheet" href="/css/style.css" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,300&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
 			rel="stylesheet"
 		/>
 		<script src="/js/script.js" defer></script>
@@ -19,28 +20,28 @@
 	</head>
 	<body>
 		<header class="header">
-				<div class="header__nav">
-					<div class="header__nav--logo">
-						<img
-							src="/img/white_logo_color_background_square.jpg"
-							alt="temp logo"
-							class="mobile-logo"
-						/>
-						<img
-							src="/img/logo/logo_transparent_background.png"
-							class="main-logo"
-						/>
-					</div>
-					<div class="header__nav--menu">
-						<img src="/img/more.png" class="header__nav--menu-hamburger" />
-						<ul class="hidden header__nav--menu-mobile">
-							<li><a href="#about">About Us</a></li>
-							<li><a href="#section-games">Games</a></li>
-							<li><a href="#section-projects">Projects</a></li>
-							<li><a href="#section-contact">Contact</a></li>
-						</ul>
-					</div>
+			<div class="header__nav">
+				<div class="header__nav--logo">
+					<img
+						src="/img/white_logo_color_background_square.jpg"
+						alt="temp logo"
+						class="header__nav--logo-mobile"
+					/>
+					<img
+						src="/img/logo/logo_transparent_background.png"
+						class="header__nav--logo-main"
+					/>
 				</div>
+				<div class="header__nav--menu">
+					<img src="/img/more.png" class="header__nav--menu-hamburger" />
+					<ul class="header__nav--menu-links">
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#section-games">Games</a></li>
+						<li><a href="#section-projects">Projects</a></li>
+						<li><a href="#section-contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
 			<div class="hero-text-box row">
 				<div class="col-12">
 					<h1>Cerberus Cyphers<br />Developing for you!</h1>
@@ -65,29 +66,23 @@
 				</div>
 			</div>
 		</header>
-		<div class="about container" id="about">
+		<section class="section__about" id="about">
 			<h2>About Us</h2>
-			<div class="row">
-				<div class="col">
-					<p>
-						We are currently working on this site. In the meantime, check out
-						one of our works here:
-						<a href="https://banditsoutdoors.netlify.app/"
-							>banditsoutdoors.netlify.com</a
-						>
-					</p>
-				</div>
-				<div class="col">
-					<img
-						src="/img/construction.jfif"
-						alt="contruction image"
-						width="300"
-					/>
-				</div>
-				<p></p>
+			<div class="section__about--text">
+				<p>
+					We are currently working on this site. In the meantime, check out one
+					of our works here:
+					<a href="https://banditsoutdoors.netlify.app/"
+						>banditsoutdoors.netlify.com</a
+					>
+				</p>
 			</div>
-		</div>
-		<div class="container-fluid section-games" id="section-games">
+			<div class="section__about--img">
+				<img src="/img/construction.jfif" alt="contruction image" width="300" />
+			</div>
+			<p></p>
+		</section>
+		<section class="section__games" id="section-games">
 			<div class="row"><h2>Game Zone</h2></div>
 			<div class="pig row">
 				<video class="vid-pig" width="280" height="200" controls>
@@ -110,188 +105,177 @@
 					>cc-guess-number.netlify.app</a
 				>
 			</div>
-		</div>
-		<section class="container-fluid section-projects" id="section-projects">
-			<div class="apps">
-				<h2>Projects Gallery</h2>
-				<div class="bankist row">
-					<div class="col-7 desc">
-						<p>
-							Javascript course project site created using
-							<img
-								src="/img/dev-icons/logo-javascript.svg"
-								alt="javascript"
-								class="js tools"
-								width="16"
-								height="20"
-							/>
-							with DOM manipulation<br />
-							<a href="https://cc-bankist.netlify.app/"
-								>cc-bankist.netlify.app</a
-							><br />
-							<a href="https://github.com/cerberusCyphers/bankist"
-								>GitHub repo</a
-							>
-						</p>
-					</div>
-					<div class="col-5">
-						<img
-							loading="lazy"
-							src="/img/projects/bankist.jpg"
-							alt="bankist"
-							class="bankist-img img-fluid"
-						/>
-					</div>
-				</div>
-				<div class="bandit row">
-					<div class="col-5">
-						<img
-							loading="lazy"
-							src="/img/projects/bandit.jpg"
-							alt="banditsoutdoors"
-							class="bandit-img img-fluid"
-						/>
-					</div>
-					<div class="col-7 desc">
-						<p>
-							Blog style responsive website created with
-							<img
-								src="/img/dev-icons/logo-html5.svg"
-								alt="html"
-								class="html tools"
-								width="16"
-								height="20"
-							/>
-							<img
-								src="/img/dev-icons/logo-css3.svg"
-								alt="css"
-								class="css tools"
-								width="16"
-								height="20"
-							/>
-							<img
-								src="/img/dev-icons/logo-javascript.svg"
-								alt="javascript"
-								class="js tools"
-								width="16"
-								height="20"
-							/><br />
-							<a href="https://banditsoutdoors.netlify.app/">
-								banditsoutdoors.netlify.app</a
-							><br />
-							<a href="https://github.com/cerberusCyphers/bandits_outdoors"
-								>GitHub repo</a
-							>
-						</p>
-					</div>
-				</div>
-				<div class="mapty row">
-					<div class="col-7 desc">
-						<p>
-							Javascript course project app build with
-							<img
-								src="/img/dev-icons/logo-javascript.svg"
-								alt="javascript"
-								class="js tools"
-								width="16"
-								height="20"
-							/><br />Utilizes Leaflet library<br />
-							<a href="https://cc-mapty.netlify.app/">cc-mapty.netlify.app</a
-							><br />
-							<a href="https://github.com/cerberusCyphers/mapty">GitHub repo</a>
-						</p>
-					</div>
-					<div class="col-5">
-						<img
-							loading="lazy"
-							src="/img/projects/mapty.jpg"
-							alt="mapty"
-							class="img-fluid mapty-img"
-						/>
-					</div>
-				</div>
-				<div class="forkify row">
-					<div class="col-5">
-						<img
-							loading="lazy"
-							src="/img/projects/forkify.jpg"
-							alt="forkify"
-							class="forkify-img img-fluid"
-						/>
-					</div>
-					<div class="col-7 desc">
-						<p>
-							Javascript course project app built with
-							<img
-								src="/img/dev-icons/logo-html5.svg"
-								alt="html"
-								class="html tools"
-								width="16"
-								height="20"
-							/>
-							<img
-								src="/img/dev-icons/logo-css3.svg"
-								alt="css"
-								class="css tools"
-								width="16"
-								height="20"
-							/>
-							<img
-								src="/img/dev-icons/logo-javascript.svg"
-								alt="javascript"
-								class="js tools"
-								width="16"
-								height="20"
-							/><br />
-							<a href="https://cc-forkify.netlify.app/"
-								>cc-forkify.netlify.app</a
-							><br />
-							<a href="https://github.com/cerberusCyphers/forkify"
-								>GitHub repo</a
-							>
-						</p>
-					</div>
-				</div>
-				<div class="omnifood row">
-					<div class="col-7 desc">
-						<p>
-							Responsive website course project app build with
-							<img
-								src="/img/dev-icons/logo-html5.svg"
-								alt="html"
-								class="html tools"
-								width="16"
-								height="20"
-							/>
-							<img
-								src="/img/dev-icons/logo-css3.svg"
-								alt="css"
-								class="css tools"
-								width="16"
-								height="20"
-							/><br />
-							<a href="https://cc-omnifood.netlify.app/"
-								>cc-omnifood.netlify.app</a
-							><br />
-							<a href="https://github.com/cerberusCyphers/omnifood"
-								>GitHub repo</a
-							>
-						</p>
-					</div>
-					<div class="col-5">
-						<img
-							loading="lazy"
-							src="/img/projects/omnifood.png"
-							alt="omnifood"
-							class="img-fluid omnifood-img"
-						/>
-					</div>
-				</div>
+		</section>
+		<section class="section__projects" id="section-projects">
+			<h2>Projects Gallery</h2>
+			<div class="section__projects--bankist-desc">
+				<p>
+					Javascript course project site created using
+					<img
+						src="/img/dev-icons/logo-javascript.svg"
+						alt="javascript"
+						class="tools tools__js"
+						width="16"
+						height="20"
+					/>
+					with DOM manipulation<br />
+					Check it out here:
+					<a href="https://cc-bankist.netlify.app/">cc-bankist.netlify.app</a
+					><br />
+					<a href="https://github.com/cerberusCyphers/bankist">GitHub repo</a>
+					available to view code.
+				</p>
+			</div>
+			<div class="section__projects--bankist-img">
+				<img
+					loading="lazy"
+					src="/img/projects/bankist.jpg"
+					alt="bankist"
+					class="section__projects--screenshot"
+				/>
+			</div>
+			<div class="section__projects--bandit-img">
+				<img
+					loading="lazy"
+					src="/img/projects/bandit.jpg"
+					alt="banditsoutdoors"
+					class="section__projects--screenshot"
+				/>
+			</div>
+			<div class="section__projects--bandit-desc">
+				<p>
+					Blog style responsive website created with
+					<img
+						src="/img/dev-icons/logo-html5.svg"
+						alt="html"
+						class="tools tools__html"
+						width="16"
+						height="20"
+					/>
+					<img
+						src="/img/dev-icons/logo-css3.svg"
+						alt="css"
+						class="tools tools__css"
+						width="16"
+						height="20"
+					/>
+					<img
+						src="/img/dev-icons/logo-javascript.svg"
+						alt="javascript"
+						class="tools tools__js"
+						width="16"
+						height="20"
+					/><br />
+					Visit
+					<a href="https://banditsoutdoors.netlify.app/">
+						banditsoutdoors.netlify.app</a
+					>
+					too see more!<br />
+					<a href="https://github.com/cerberusCyphers/bandits_outdoors"
+						>GitHub repo</a
+					>
+					availble to view code.
+				</p>
+			</div>
+			<div class="section__projects--mapty-desc">
+				<p>
+					Javascript course project app build with
+					<img
+						src="/img/dev-icons/logo-javascript.svg"
+						alt="javascript"
+						class="tools tools__js"
+						width="16"
+						height="20"
+					/><br />Utilizes Leaflet library<br />
+					Try the app @
+					<a href="https://cc-mapty.netlify.app/">cc-mapty.netlify.app</a><br />
+					<a href="https://github.com/cerberusCyphers/mapty">GitHub repo</a>
+					available to view code.
+				</p>
+			</div>
+			<div class="section__projects--mapty-img">
+				<img
+					loading="lazy"
+					src="/img/projects/mapty.jpg"
+					alt="mapty"
+					class="section__projects--screenshot"
+				/>
+			</div>
+			<div class="section__projects--forkify-img">
+				<img
+					loading="lazy"
+					src="/img/projects/forkify.jpg"
+					alt="forkify"
+					class="section__projects--screenshot"
+				/>
+			</div>
+			<div class="section__projects--forkify-desc">
+				<p>
+					Javascript course project app built with
+					<img
+						src="/img/dev-icons/logo-html5.svg"
+						alt="html"
+						class="tools tools__html"
+						width="16"
+						height="20"
+					/>
+					<img
+						src="/img/dev-icons/logo-css3.svg"
+						alt="css"
+						class="tools tools__css"
+						width="16"
+						height="20"
+					/>
+					<img
+						src="/img/dev-icons/logo-javascript.svg"
+						alt="javascript"
+						class="tools tools__js"
+						width="16"
+						height="20"
+					/><br />
+					Click link to test it out:
+					<a href="https://cc-forkify.netlify.app/">cc-forkify.netlify.app</a
+					><br />
+					<a href="https://github.com/cerberusCyphers/forkify">GitHub repo</a>
+					available to view code.
+				</p>
+			</div>
+			<div class="section__projects--omnifood-desc">
+				<p>
+					Responsive website course project app build with
+					<img
+						src="/img/dev-icons/logo-html5.svg"
+						alt="html"
+						class="tools tools__html"
+						width="16"
+						height="20"
+					/>
+					<img
+						src="/img/dev-icons/logo-css3.svg"
+						alt="css"
+						class="tools tools__css"
+						width="16"
+						height="20"
+					/><br />
+					Explore further here:
+					<a href="https://cc-omnifood.netlify.app/">cc-omnifood.netlify.app</a
+					><br />
+					<a href="https://github.com/cerberusCyphers/omnifood">GitHub repo</a>
+					available to view code.
+				</p>
+			</div>
+			<div class="section__projects--omnifood-img">
+				<img
+					loading="lazy"
+					src="/img/projects/omnifood.png"
+					alt="omnifood"
+					class="section__projects--screenshot"
+				/>
 			</div>
 		</section>
-		<footer class="container-fluid foot-icons">
-			<div class="foot-row row">
-				<div class="col-6 foot-links">
+		<footer class="footer">
+			<div class="footer__nav">
+				<div class="footer__nav--links">
 					<a href="#"
 						><img src="/img/dev-icons/ios-home.svg" alt="home" class="foot-img"
 					/></a>
@@ -299,7 +283,7 @@
 						><img src="/img/dev-icons/ios-apps.svg" alt="apps" class="foot-img"
 					/></a>
 				</div>
-				<div class="col-6 social-media">
+				<div class="footer__nav--social">
 					<a
 						href="https://www.facebook.com/Cerberus-Cyphers-108534644627866"
 						class="icon"
@@ -330,8 +314,8 @@
 					</p>
 				</div>
 			</div>
-			<div class="copyright row">
-				<div class="col copy">
+			<div class="footer__copy">
+				<div class="footer__copy--text">
 					<p>Copyright © Cerberus Cyphers 2021. All rights reserved.</p>
 				</div>
 			</div>

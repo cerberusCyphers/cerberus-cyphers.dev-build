@@ -1,42 +1,76 @@
-.nav {
+.header__nav {
 	display: flex;
-	justify-content: flex-end;
-}
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 15rem;
 
-.hamburger {
-	background-color: #619e23;
-	border-radius: 40px;
-	width: 50px;
-	padding: 2px;
-	margin-top: 3%;
-	position: fixed;
-	z-index: 9999;
-}
+	&--logo {
+		&-mobile {
+			// width: 60px;
+			// border-radius: 50%;
+			// float: left;
+			// margin-right: 5%;
+			// margin-top: 4%;
+			display: none;
+		}
 
-.mobile-nav {
-	margin-top: 4.5rem;
-	font-weight: 600;
-	position: fixed;
-	z-index: 9999;
-}
+		&-main {
+			margin-top: 0.8rem;
+			width: 40rem;
+			background-color: $color-black;
+			border-radius: 1rem;
+		}
+	}
 
-.mobile-nav li {
-	align-content: right;
-	padding: 2px;
-	border: 2px solid #619e23;
-	background-color: #619e23b6;
-	width: 5.5rem;
-	text-transform: uppercase;
-	list-style-type: none;
-}
+	&--menu {
+		&-hamburger {
+			display: none;
+		}
+		&-links {
+			display: flex;
+			justify-content: space-between;
+			width: 60vw;
+			margin-left: 5rem;
+			font-size: 3rem;
+			font-weight: 600;
+		}
 
-.mobile-nav a:link,
-.mobile-nav a:visited {
-	color: crimson;
-}
+		// @media only screen and (max-width: $bp-sm) {
+		// 	margin-top: 4.5rem;
+		// 	font-weight: 600;
+		// 	position: fixed;
+		// 	z-index: 9999;
 
-.mobile-nav a:hover,
-.mobile-nav a:active {
-	color: #619e23;
-	transition: border-bottom 0.2s, color 0.2s;
+		// 	& li {
+		// 		align-content: right;
+		// 		padding: 2px;
+		// 		border: 2px solid $color-secondary;
+		// 		background-color: $color-secondary-faded;
+		// 		width: 5.5rem;
+		// 		text-transform: uppercase;
+		// 		list-style-type: none;
+		// 	}
+
+		// 	& a:link,
+		// 	a:visited {
+		// 		color: $color-primary-light;
+		// 	}
+
+		// 	& a:hover,
+		// 	a:active {
+		// 		color: $color-secondary;
+		// 		transition: border-bottom 0.2s, color 0.2s;
+		// 	}
+
+		// 	&-hamburger {
+		// 		background-color: $color-secondary;
+		// 		border-radius: 40px;
+		// 		width: 50px;
+		// 		padding: 2px;
+		// 		margin-top: 3%;
+		// 		position: fixed;
+		// 		z-index: 9999;
+		// 	}
+		// }
+	}
 }

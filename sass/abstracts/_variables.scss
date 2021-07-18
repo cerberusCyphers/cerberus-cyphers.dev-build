@@ -1,0 +1,27 @@
+//* ****COLORS****
+$color-primary-light: hsl(353, 72%, 44%);
+$color-primary: hsl(353, 72%, 34%);
+$color-primary-faded: hsla(353, 72%, 34%, 0.5);
+$color-primary-dark: hsl(353, 72%, 24%);
+
+$color-secondary: hsl(90, 64%, 38%);
+$color-secondary-faded: hsla(90, 64%, 38%, 0.5);
+$color-secondary-dark: hsl(90, 64%, 28%);
+
+$color-white: hsl(116, 100%, 97%);
+
+$color-black: hsl(0, 0%, 11%);
+$color-black-faded: hsla(0, 0%, 11%, 0.5);
+
+$color-grey: hsl(0, 0%, 26%);
+
+//* ****FONT SIZES****
+
+//* ****BREAKPOINTS****
+$bp-xxl: 93.75em; // 1500px
+$bp-xl: 75em; // 1200px
+$bp-lg: 68.75em; // 1100px
+$bp-md: 56.25em; // 900px
+$bp-sm: 37.5em; // 600px
+$bp-xs: 31.25em; // 500px
+$bp-xxs: 25em; // 400px
