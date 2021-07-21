@@ -6,46 +6,46 @@ button {
 	margin-top: 3rem;
 	cursor: pointer;
 }
-.hero-button {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	margin-right: 1rem;
-}
 
-.hero-box-btn {
+.btn-main {
 	color: #1b1b1b;
 	background-color: #619e23;
-	font-size: 0.9rem;
+	box-shadow: 3px 3px 5px $color-black;
 	font-weight: 700;
 	width: 6em;
 	height: 2.5em;
-	justify-content: center;
+	transition: all 0.3s;
 }
 
-.hero-box-btn:link,
-.hero-box-btn:visited {
+.btn-main:link,
+.btn-main:visited {
 	font-weight: 300;
 	text-decoration: none;
 }
-.hero-box-btn:hover,
-.hero-box-btn:active {
+.btn-main:hover,
+.btn-main:active {
 	background-color: #4e801d;
+	box-shadow: 5px 5px 10px $color-black;
+	transform: scale(110%);
 }
 
 .sec-button {
 	padding-right: 0;
 }
 
-.secondary-btn {
+.btn-sec {
 	color: #619e23;
 	background-color: #1b1b1b85;
+	box-shadow: 3px 3px 5px $color-black;
 	width: 5em;
 	height: 2.2em;
+	transition: all 0.3s;
 }
 
-.secondary-btn:hover,
-.secondary-btn:active {
+.btn-sec:hover,
+.btn-sec:active {
 	background-color: #619e23cc;
 	color: #1b1b1b;
+	box-shadow: 5px 5px 10px $color-black;
+	transform: scale(110%);
 }
