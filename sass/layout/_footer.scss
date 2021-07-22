@@ -1,7 +1,41 @@
 .footer {
-	&__nav {
+	background-color: $color-grey-dark;
+	display: grid;
+	grid-template-columns: repeat(10, 10%);
+	grid-template-rows: 8rem 15rem 12rem;
+
+	&__nav--links {
+		grid-column: 3 /4;
+		grid-row: 2 / 3;
+		align-self: center;
+		justify-self: end;
+
 		& img {
 			width: 5rem;
+			padding-left: 1.5rem;
 		}
 	}
+
+	&__nav--social {
+		grid-column: 8 / 10;
+		grid-row: 2 / 3;
+		align-self: center;
+
+		& img {
+			width: 5rem;
+			padding-right: 1.5rem;
+		}
+	}
+
+	&__copy {
+		grid-column: 4 / 8;
+		grid-row: 3 / 4;
+		padding: 5rem 3rem;
+		justify-self: center;
+	}
+}
+
+.attribute {
+	grid-column: 8 / 10;
+	grid-row: 3 / 4;
 }

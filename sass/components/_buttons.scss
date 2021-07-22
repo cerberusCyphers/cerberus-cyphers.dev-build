@@ -8,8 +8,8 @@ button {
 }
 
 .btn-main {
-	color: #1b1b1b;
-	background-color: #619e23;
+	color: $color-black;
+	background-color: $color-primary;
 	box-shadow: 3px 3px 5px $color-black;
 	font-weight: 700;
 	width: 6em;
@@ -24,7 +24,7 @@ button {
 }
 .btn-main:hover,
 .btn-main:active {
-	background-color: #4e801d;
+	background-color: $color-primary-dark;
 	box-shadow: 5px 5px 10px $color-black;
 	transform: scale(110%);
 }
@@ -34,8 +34,8 @@ button {
 }
 
 .btn-sec {
-	color: #619e23;
-	background-color: #1b1b1b85;
+	color: $color-primary-light;
+	background-color: $color-black-faded;
 	box-shadow: 3px 3px 5px $color-black;
 	width: 5em;
 	height: 2.2em;
@@ -44,8 +44,8 @@ button {
 
 .btn-sec:hover,
 .btn-sec:active {
-	background-color: #619e23cc;
-	color: #1b1b1b;
+	background-color: $color-primary-faded;
+	color: $color-black;
 	box-shadow: 5px 5px 10px $color-black;
 	transform: scale(110%);
 }
