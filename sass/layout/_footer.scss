@@ -4,6 +4,10 @@
 	grid-template-columns: repeat(10, 10%);
 	grid-template-rows: 8rem 15rem 12rem;
 
+	& p {
+		letter-spacing: 0.1rem;
+	}
+
 	&__nav--links {
 		grid-column: 3 /4;
 		grid-row: 2 / 3;
@@ -38,4 +42,10 @@
 .attribute {
 	grid-column: 8 / 10;
 	grid-row: 3 / 4;
+
+	& p,
+	a {
+		font-size: 1.2rem;
+		color: $color-black;
+	}
 }

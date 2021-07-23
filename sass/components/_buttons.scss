@@ -9,7 +9,7 @@ button {
 
 .btn-main {
 	color: $color-black;
-	background-color: $color-primary;
+	background-color: $color-primary-light;
 	box-shadow: 3px 3px 5px $color-black;
 	font-weight: 700;
 	width: 6em;
@@ -24,7 +24,7 @@ button {
 }
 .btn-main:hover,
 .btn-main:active {
-	background-color: $color-primary-dark;
+	background-color: $color-primary;
 	box-shadow: 5px 5px 10px $color-black;
 	transform: scale(110%);
 }
@@ -44,7 +44,7 @@ button {
 
 .btn-sec:hover,
 .btn-sec:active {
-	background-color: $color-primary-faded;
+	background-color: $color-primary;
 	color: $color-black;
 	box-shadow: 5px 5px 10px $color-black;
 	transform: scale(110%);

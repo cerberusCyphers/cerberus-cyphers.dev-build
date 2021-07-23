@@ -1,17 +1,17 @@
 //* ****COLORS****
-// $color-primary-light: hsl(353, 72%, 44%);
-// $color-primary: hsl(353, 72%, 34%);
-// $color-primary-faded: hsla(353, 72%, 34%, 0.5);
-// $color-primary-dark: hsl(353, 72%, 24%);
+$color-primary-light: hsl(353, 72%, 54%);
+$color-primary: hsl(353, 72%, 34%);
+$color-primary-faded: hsla(353, 72%, 34%, 0.5);
+$color-primary-dark: hsl(353, 72%, 24%);
 
 // $color-secondary: hsl(90, 64%, 38%);
 // $color-secondary-faded: hsla(90, 64%, 38%, 0.5);
 // $color-secondary-dark: hsl(90, 64%, 28%);
 
-$color-primary-light: hsl(349, 58%, 65%);
-$color-primary: hsl(349, 58%, 45%);
-$color-primary-faded: hsla(349, 58%, 45%, 0.5);
-$color-primary-dark: hsl(349, 58%, 35%);
+// $color-primary-light: hsl(349, 58%, 65%);
+// $color-primary: hsl(349, 58%, 45%);
+// $color-primary-faded: hsla(349, 58%, 45%, 0.5);
+// $color-primary-dark: hsl(349, 58%, 35%);
 
 $color-secondary-light: hsl(61, 58%, 55%);
 $color-secondary: hsl(61, 58%, 45%);
@@ -23,7 +23,8 @@ $color-tertiary: hsl(205, 58%, 45%);
 $color-tertiary-faded: hsla(205, 58%, 45%, 0.5);
 $color-tertiary-dark: hsl(205, 58%, 35%);
 
-$color-white: hsl(0, 100%, 97%);
+$color-white: hsl(0, 9%, 96%);
+$color-white-faded: hsla(0, 9%, 96%, 0.9);
 
 $color-black: hsl(0, 5%, 11%);
 $color-black-faded: hsla(0, 5%, 11%, 0.8);

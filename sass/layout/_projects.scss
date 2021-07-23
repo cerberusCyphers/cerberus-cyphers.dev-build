@@ -15,6 +15,7 @@
 	& p {
 		padding-top: 5rem;
 		padding-left: 3rem;
+		letter-spacing: 0.1rem;
 	}
 
 	& img {
@@ -37,7 +38,7 @@
 			grid-column: 3 / -2;
 		}
 	}
-	&--bandit {
+	&--nexter {
 		grid-row: 3 / 4;
 		&-desc {
 			grid-column: 4 / -2;

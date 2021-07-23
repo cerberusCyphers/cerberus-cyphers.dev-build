@@ -37,15 +37,17 @@ ul {
 
 a {
 	text-decoration: none;
-	color: $color-primary-dark;
+	color: $color-primary;
 	font-size: 2rem;
 }
 
 a:hover,
 a:active {
-	color: $color-primary;
+	color: $color-primary-light;
+	transform: scale(102%);
 }
 
 a:focus {
-	outline: 0.2rem solid;
+	outline: 0.2rem solid $color-primary-light;
+	border-radius: 5rem;
 }

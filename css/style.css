@@ -57,15 +57,17 @@ ul {
 
 a {
   text-decoration: none;
-  color: #8d2538;
+  color: #951827;
   font-size: 2rem; }
 
 a:hover,
 a:active {
-  color: #b53049; }
+  color: #de3549;
+  transform: scale(102%); }
 
 a:focus {
-  outline: 0.2rem solid; }
+  outline: 0.2rem solid #de3549;
+  border-radius: 5rem; }
 
 button {
   display: inline-block;
@@ -77,7 +79,7 @@ button {
 
 .btn-main {
   color: #1d1b1b;
-  background-color: #b53049;
+  background-color: #de3549;
   box-shadow: 3px 3px 5px #1d1b1b;
   font-weight: 700;
   width: 6em;
@@ -91,7 +93,7 @@ button {
 
 .btn-main:hover,
 .btn-main:active {
-  background-color: #8d2538;
+  background-color: #951827;
   box-shadow: 5px 5px 10px #1d1b1b;
   transform: scale(110%); }
 
@@ -99,7 +101,7 @@ button {
   padding-right: 0; }
 
 .btn-sec {
-  color: #da7285;
+  color: #de3549;
   background-color: rgba(29, 27, 27, 0.8);
   box-shadow: 3px 3px 5px #1d1b1b;
   width: 5em;
@@ -108,13 +110,13 @@ button {
 
 .btn-sec:hover,
 .btn-sec:active {
-  background-color: rgba(181, 48, 73, 0.5);
+  background-color: #951827;
   color: #1d1b1b;
   box-shadow: 5px 5px 10px #1d1b1b;
   transform: scale(110%); }
 
 .section__about {
-  background-image: linear-gradient(to right bottom, #fff0f0, #b53049);
+  background-image: linear-gradient(to right bottom, #951827, rgba(246, 244, 244, 0.9));
   padding-bottom: 10rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -125,7 +127,13 @@ button {
     grid-row: 2 / 3;
     grid-column: 1 / 4;
     padding: 5rem;
-    font-size: 2.3rem; }
+    font-size: 2.3rem;
+    letter-spacing: 0.4rem; }
+    .section__about--text a {
+      color: #f6f4f4; }
+    .section__about--text a:hover,
+    .section__about--text a:active {
+      color: #69111b; }
   .section__about--img {
     grid-row: 2 / 3;
     grid-column: 4 / -1;
@@ -136,6 +144,8 @@ button {
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: 8rem 15rem 12rem; }
+  .footer p {
+    letter-spacing: 0.1rem; }
   .footer__nav--links {
     grid-column: 3 /4;
     grid-row: 2 / 3;
@@ -160,14 +170,21 @@ button {
 .attribute {
   grid-column: 8 / 10;
   grid-row: 3 / 4; }
+  .attribute p,
+  .attribute a {
+    font-size: 1.2rem;
+    color: #1d1b1b; }
 
 .section__games {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 2rem;
-  background-color: #fff0f0; }
+  background-color: #f6f4f4;
+  text-align: center; }
   .section__games h2 {
     grid-column: 2 / 4; }
+  .section__games p {
+    letter-spacing: 0.1rem; }
   .section__games--pig {
     grid-column: 1 / span 2;
     grid-row: 2 / span 2;
@@ -220,11 +237,11 @@ header {
         border-radius: 15%; }
     .header__nav--menu li:hover {
       transform: scale(115%) skewY(10deg);
-      box-shadow: 2px 2px 10px #da7285; }
+      box-shadow: 2px 2px 10px #de3549; }
     .header__nav--menu a {
-      color: #fff0f0; }
+      color: #f6f4f4; }
       .header__nav--menu a:hover, .header__nav--menu a:active {
-        color: #b53049; }
+        color: #de3549; }
 
 .header__btn {
   justify-self: center; }
@@ -239,7 +256,7 @@ header {
   grid-column: 4 / 8;
   grid-row: 5 / 6;
   justify-self: center;
-  color: #fff0f0;
+  color: #f6f4f4;
   font-size: 3rem; }
 
 .section__projects {
@@ -248,13 +265,14 @@ header {
   grid-template-rows: 15rem repeat(5, 35rem);
   grid-gap: 2rem;
   background-color: #b0b0b0;
-  color: #fff0f0;
+  color: #f6f4f4;
   font-size: 2.4rem; }
   .section__projects h2 {
     grid-column: 2 / 4; }
   .section__projects p {
     padding-top: 5rem;
-    padding-left: 3rem; }
+    padding-left: 3rem;
+    letter-spacing: 0.1rem; }
   .section__projects img {
     border-radius: 2rem; }
   .section__projects--screenshot {
@@ -268,11 +286,11 @@ header {
       grid-column: 1 / 3; }
     .section__projects--bankist-img {
       grid-column: 3 / -2; }
-  .section__projects--bandit {
+  .section__projects--nexter {
     grid-row: 3 / 4; }
-    .section__projects--bandit-desc {
+    .section__projects--nexter-desc {
       grid-column: 4 / -2; }
-    .section__projects--bandit-img {
+    .section__projects--nexter-img {
       grid-column: 1 / 4; }
   .section__projects--mapty {
     grid-row: 4 / 5; }
@@ -301,3 +319,29 @@ header {
 
 .tools__js {
   background-color: rgba(255, 255, 0, 0.75); }
+
+.section__sites {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f4f4; }
+  .section__sites h2 {
+    padding-left: 37rem; }
+  .section__sites p {
+    letter-spacing: 0.1rem; }
+  .section__sites--text {
+    align-self: center;
+    padding: 10rem 0; }
+  .section__sites--links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 0; }
+    .section__sites--links-site {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .section__sites--links-site img {
+        border-radius: 50%; }
+
+.mysg-img {
+  transform: scale(125%); }
