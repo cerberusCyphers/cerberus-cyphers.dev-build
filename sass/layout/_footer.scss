@@ -4,8 +4,16 @@
 	grid-template-columns: repeat(10, 10%);
 	grid-template-rows: 8rem 15rem 12rem;
 
+	@media only screen and (max-width: $bp-xl) {
+		grid-template-rows: 8rem repeat(2, 10rem);
+	}
+
 	& p {
 		letter-spacing: 0.1rem;
+
+		@media only screen and (max-width: 1300px) {
+			font-size: 1.8rem;
+		}
 	}
 
 	&__nav--links {
@@ -14,6 +22,10 @@
 		align-self: center;
 		justify-self: end;
 
+		@media only screen and (max-width: $bp-md) {
+			grid-column: 1 / 4;
+			justify-self: center;
+		}
 		& img {
 			width: 5rem;
 			padding-left: 1.5rem;
@@ -25,17 +37,33 @@
 		grid-row: 2 / 3;
 		align-self: center;
 
+		@media only screen and (max-width: 1050px) {
+			grid-column: 7 / -1;
+			justify-self: center;
+		}
+		@media only screen and (max-width: $bp-xs) {
+			grid-column: 6 / -1;
+		}
+
 		& img {
 			width: 5rem;
 			padding-right: 1.5rem;
+
+			@media only screen and (max-width: $bp-md) {
+				width: 4rem;
+			}
 		}
 	}
 
 	&__copy {
 		grid-column: 4 / 8;
 		grid-row: 3 / 4;
-		padding: 5rem 3rem;
 		justify-self: center;
+
+		@media only screen and (max-width: $bp-md) {
+			grid-column: 2 / -2;
+			font-size: 1.4rem;
+		}
 	}
 }
 
@@ -47,5 +75,9 @@
 	a {
 		font-size: 1.2rem;
 		color: $color-black;
+
+		@media only screen and (max-width: $bp-md) {
+			display: none;
+		}
 	}
 }
