@@ -20,15 +20,17 @@
 		grid-column: 3 /4;
 		grid-row: 2 / 3;
 		align-self: center;
-		justify-self: end;
+		justify-self: center;
 
 		@media only screen and (max-width: $bp-md) {
 			grid-column: 1 / 4;
-			justify-self: center;
 		}
+
 		& img {
 			width: 5rem;
-			padding-left: 1.5rem;
+			background-color: $color-grey-light;
+			box-shadow: 0 0 5px 5px $color-grey-dark inset;
+			border-radius: 40%;
 		}
 	}
 

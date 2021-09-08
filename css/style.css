@@ -161,6 +161,48 @@ button {
       .section__about--img {
         grid-column: 1 / -1; } }
 
+.section__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(#de3549, #424242);
+  color: #f6f4f4; }
+  @media only screen and (max-width: 56.25em) {
+    .section__contact {
+      flex-direction: column; } }
+  .section__contact--text {
+    letter-spacing: 0.25rem;
+    width: 50%;
+    padding: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .section__contact--text {
+        width: 80%;
+        padding: 2rem 0; } }
+    @media only screen and (max-width: 31.25em) {
+      .section__contact--text {
+        width: 100%;
+        font-size: 0.75rem; } }
+    .section__contact--text-p {
+      margin-bottom: 1.5rem; }
+    .section__contact--text-link_em {
+      color: #b0b0b0; }
+    .section__contact--text-link_fb {
+      color: #1877f2; }
+    .section__contact--text-link_wa {
+      color: #25d366; }
+    .section__contact--text-link_li {
+      color: #007bb5; }
+  .section__contact--img {
+    display: flex;
+    justify-content: center; }
+    .section__contact--img img {
+      width: 100%;
+      clip-path: polygon(14% 50%, 30% 0, 90% 0, 95% 50%, 90% 100%, 59% 100%, 0 100%); }
+      @media only screen and (max-width: 56.25em) {
+        .section__contact--img img {
+          margin: 0 2rem;
+          clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); } }
+
 .footer {
   background-color: #424242;
   display: grid;
@@ -178,14 +220,15 @@ button {
     grid-column: 3 /4;
     grid-row: 2 / 3;
     align-self: center;
-    justify-self: end; }
+    justify-self: center; }
     @media only screen and (max-width: 56.25em) {
       .footer__nav--links {
-        grid-column: 1 / 4;
-        justify-self: center; } }
+        grid-column: 1 / 4; } }
     .footer__nav--links img {
       width: 5rem;
-      padding-left: 1.5rem; }
+      background-color: #b0b0b0;
+      box-shadow: 0 0 5px 5px #424242 inset;
+      border-radius: 40%; }
   .footer__nav--social {
     grid-column: 8 / 10;
     grid-row: 2 / 3;
