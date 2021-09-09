@@ -1,0 +1,51 @@
+button {
+	display: inline-block;
+	border-radius: 200px;
+	text-align: center;
+	word-wrap: none;
+	margin-top: 3rem;
+	cursor: pointer;
+}
+
+.btn-main {
+	color: $color-black;
+	background-color: $color-primary-light;
+	box-shadow: 3px 3px 5px $color-black;
+	font-weight: 700;
+	width: 6em;
+	height: 2.5em;
+	transition: all 0.3s;
+}
+
+.btn-main:link,
+.btn-main:visited {
+	font-weight: 300;
+	text-decoration: none;
+}
+.btn-main:hover,
+.btn-main:active {
+	background-color: $color-primary;
+	box-shadow: 5px 5px 10px $color-black;
+	transform: scale(110%);
+}
+
+.sec-button {
+	padding-right: 0;
+}
+
+.btn-sec {
+	color: $color-primary-light;
+	background-color: $color-black-faded;
+	box-shadow: 3px 3px 5px $color-black;
+	width: 5em;
+	height: 2.2em;
+	transition: all 0.3s;
+}
+
+.btn-sec:hover,
+.btn-sec:active {
+	background-color: $color-primary;
+	color: $color-black;
+	box-shadow: 5px 5px 10px $color-black;
+	transform: scale(110%);
+}

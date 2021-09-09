@@ -1,0 +1,55 @@
+.section__sites {
+	display: flex;
+	flex-direction: column;
+	background-color: $color-white;
+
+	& h2 {
+		align-self: center;
+	}
+
+	& p {
+		letter-spacing: 0.1rem;
+	}
+
+	&--text {
+		align-self: center;
+		padding: 10rem 0;
+
+		@media only screen and (max-width: $bp-xl) {
+			padding: 7rem 0;
+		}
+	}
+
+	&--links {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 5rem 0;
+
+		@media only screen and (max-width: $bp-sm) {
+			flex-direction: column;
+		}
+
+		&-site {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			@media only screen and (max-width: $bp-sm) {
+				padding-bottom: 4rem;
+			}
+
+			& img {
+				border-radius: 50%;
+
+				@media only screen and (max-width: $bp-md) {
+					width: 13rem;
+				}
+			}
+		}
+	}
+}
+
+.mysg-img {
+	transform: scale(125%);
+}

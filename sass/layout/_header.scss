@@ -1,0 +1,165 @@
+header {
+	background-image: linear-gradient($color-black-faded, $color-black-faded),
+		url('/img/office.jpg');
+	background-size: cover;
+	background-position: unset;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	overflow: hidden;
+
+	@media only screen and (max-width: $bp-md) {
+		background-position: center;
+	}
+
+	& button {
+		font-size: 2rem;
+	}
+}
+
+.header {
+	display: grid;
+	grid-template-columns: repeat(10, 10%);
+	grid-template-rows: repeat(10, 10%);
+	align-items: center;
+	justify-content: center;
+
+	&__nav--logo {
+		grid-column: 2 / 4;
+		transform: translate(-10rem, 3rem);
+
+		@media only screen and (max-width: 1050px) {
+			grid-column: 3 / 4;
+		}
+		@media only screen and (max-width: $bp-sm) {
+			grid-column: 4 / 5;
+		}
+		@media only screen and (max-width: $bp-xs) {
+			padding-left: 2rem;
+		}
+
+		&-mobile {
+			display: none;
+
+			@media only screen and (max-width: 1050px) {
+				display: block;
+				border-radius: 50%;
+				width: 8rem;
+			}
+		}
+
+		&-main {
+			margin-top: 0.8rem;
+			width: 40rem;
+			background-color: hsla(0, 5%, 11%, 0.5);
+			border-radius: 50%;
+
+			@media only screen and (max-width: $bp-xl) {
+				width: 30rem;
+			}
+			@media only screen and (max-width: 1050px) {
+				display: none;
+			}
+		}
+	}
+
+	&__nav--menu {
+		grid-column: 4 / -2;
+
+		@media only screen and (max-width: $bp-sm) {
+			grid-column: 8 / span 2;
+			padding-top: 6rem;
+		}
+		@media only screen and (max-width: $bp-xs) {
+			grid-column: 6 / span 2;
+			padding-left: 1rem;
+		}
+
+		// &__nav-hamburger {
+		// 	display: none;
+		// }
+		&-links {
+			display: flex;
+			justify-content: space-between;
+			width: 60vw;
+			margin-left: 5rem;
+			font-size: 3rem;
+			font-weight: 600;
+			transform: translateY(3rem);
+			transition: all 0.3s;
+
+			@media only screen and (max-width: $bp-sm) {
+				flex-direction: column;
+			}
+
+			& li {
+				padding: 0 1rem;
+				border-radius: 15%;
+				// 	margin-left: 15rem;
+			}
+		}
+
+		li:hover {
+			transform: scale(115%) skewY(10deg);
+			box-shadow: 2px 2px 10px $color-primary-light;
+		}
+
+		& a {
+			color: $color-white;
+
+			&:hover,
+			&:active {
+				color: $color-primary-light;
+			}
+		}
+	}
+}
+
+.header__btn {
+	justify-self: center;
+
+	&--main {
+		grid-column: 4 / span 2;
+		grid-row: 8 / 9;
+
+		@media only screen and (max-width: $bp-md) {
+			grid-column: 3 / span 2;
+		}
+	}
+
+	&--sec {
+		grid-column: 6 / span 2;
+		grid-row: 8 / 9;
+		@media only screen and (max-width: $bp-md) {
+			grid-column: 6 / span 3;
+		}
+		@media only screen and (max-width: $bp-xs) {
+			grid-column: 6 / span 4;
+		}
+	}
+}
+
+.heading__main {
+	grid-column: 4 / 8;
+	grid-row: 5 / 6;
+	justify-self: center;
+	color: $color-white;
+	font-size: 3rem;
+
+	@media only screen and (max-width: $bp-xl) {
+		font-size: 2.3rem;
+	}
+	@media only screen and (max-width: $bp-lg) {
+		font-size: 2.1rem;
+	}
+	@media only screen and (max-width: $bp-md) {
+		grid-column: 3 / 9;
+		justify-self: center;
+		font-size: 1.8rem;
+	}
+	@media only screen and (max-width: $bp-sm) {
+		grid-column: 1 / -1;
+		justify-self: center;
+		font-size: 1.6rem;
+	}
+}

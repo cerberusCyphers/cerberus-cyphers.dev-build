@@ -1,0 +1,52 @@
+//* ****COLORS****
+$color-primary-light: hsl(353, 72%, 54%);
+$color-primary: hsl(353, 72%, 34%);
+$color-primary-faded: hsla(353, 72%, 34%, 0.5);
+$color-primary-dark: hsl(353, 72%, 24%);
+
+// $color-secondary: hsl(90, 64%, 38%);
+// $color-secondary-faded: hsla(90, 64%, 38%, 0.5);
+// $color-secondary-dark: hsl(90, 64%, 28%);
+
+// $color-primary-light: hsl(349, 58%, 65%);
+// $color-primary: hsl(349, 58%, 45%);
+// $color-primary-faded: hsla(349, 58%, 45%, 0.5);
+// $color-primary-dark: hsl(349, 58%, 35%);
+
+$color-secondary-light: hsl(61, 58%, 55%);
+$color-secondary: hsl(61, 58%, 45%);
+$color-secondary-faded: hsla(61, 58%, 45%, 0.5);
+$color-secondary-dark: hsl(61, 58%, 35%);
+
+$color-tertiary-light: hsl(205, 58%, 55%);
+$color-tertiary: hsl(205, 58%, 45%);
+$color-tertiary-faded: hsla(205, 58%, 45%, 0.5);
+$color-tertiary-dark: hsl(205, 58%, 35%);
+
+$color-white: hsl(0, 9%, 96%);
+$color-white-faded: hsla(0, 9%, 96%, 0.9);
+
+$color-black: hsl(0, 5%, 11%);
+$color-black-faded: hsla(0, 5%, 11%, 0.8);
+
+$color-grey-light: hsl(0, 0%, 69%);
+$color-grey: hsl(0, 0%, 46%);
+$color-grey-dark: hsl(0, 0%, 26%);
+
+$color-facebook: #1877f2;
+$color-whatsapp: #25d366;
+$color-linkedin: #007bb5;
+$color-github: #6e5494;
+$color-slack: #4a154b;
+
+//* ****GRID VARS****
+$deafult-gap: 2rem;
+
+//* ****BREAKPOINTS****
+$bp-xxl: 93.75em; // 1500px
+$bp-xl: 75em; // 1200px
+$bp-lg: 68.75em; // 1100px
+$bp-md: 56.25em; // 900px
+$bp-sm: 37.5em; // 600px
+$bp-xs: 31.25em; // 500px
+$bp-xxs: 25em; // 400px
