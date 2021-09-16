@@ -15,22 +15,47 @@
 			font-size: 1.8rem;
 		}
 	}
-
-	&__nav--links {
-		grid-column: 3 /4;
-		grid-row: 2 / 3;
-		align-self: center;
-		justify-self: center;
-
-		@media only screen and (max-width: $bp-md) {
-			grid-column: 1 / 4;
-		}
-
+	&__nav--link-home,
+	&__nav--link-games {
 		& img {
 			width: 5rem;
 			background-color: $color-grey-light;
 			box-shadow: 0 0 5px 5px $color-grey-dark inset;
 			border-radius: 40%;
+
+			@media only screen and (max-width: $bp-md) {
+				width: 3.5rem;
+			}
+		}
+		img:hover {
+			background-color: $color-primary-light;
+		}
+	}
+
+	&__nav--link-home {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		align-self: center;
+		justify-self: end;
+
+		@media only screen and (max-width: $bp-md) {
+			grid-column: 2 / 3;
+		}
+	}
+
+	&__nav--link-games {
+		grid-column: 3 / 4;
+		grid-row: 2 / 3;
+		align-self: center;
+		justify-self: center;
+
+		@media only screen and (max-width: $bp-md) {
+			grid-column: 3 / 4;
+			justify-self: end;
+		}
+
+		@media only screen and (max-width: $bp-xs) {
+			grid-column: 4 / 5;
 		}
 	}
 
@@ -38,13 +63,18 @@
 		grid-column: 8 / 10;
 		grid-row: 2 / 3;
 		align-self: center;
+		transition: all 0.3s;
+
+		& :hover {
+			transform: scale(125%);
+		}
 
 		@media only screen and (max-width: 1050px) {
 			grid-column: 7 / -1;
 			justify-self: center;
 		}
 		@media only screen and (max-width: $bp-xs) {
-			grid-column: 6 / -1;
+			grid-column: 5 / -1;
 		}
 
 		& img {

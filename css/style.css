@@ -218,30 +218,50 @@ button {
     @media only screen and (max-width: 1300px) {
       .footer p {
         font-size: 1.8rem; } }
-  .footer__nav--links {
-    grid-column: 3 /4;
+  .footer__nav--link-home img, .footer__nav--link-games img {
+    width: 5rem;
+    background-color: #b0b0b0;
+    box-shadow: 0 0 5px 5px #424242 inset;
+    border-radius: 40%; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__nav--link-home img, .footer__nav--link-games img {
+        width: 3.5rem; } }
+  .footer__nav--link-home img:hover, .footer__nav--link-games img:hover {
+    background-color: #de3549; }
+  .footer__nav--link-home {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: end; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__nav--link-home {
+        grid-column: 2 / 3; } }
+  .footer__nav--link-games {
+    grid-column: 3 / 4;
     grid-row: 2 / 3;
     align-self: center;
     justify-self: center; }
     @media only screen and (max-width: 56.25em) {
-      .footer__nav--links {
-        grid-column: 1 / 4; } }
-    .footer__nav--links img {
-      width: 5rem;
-      background-color: #b0b0b0;
-      box-shadow: 0 0 5px 5px #424242 inset;
-      border-radius: 40%; }
+      .footer__nav--link-games {
+        grid-column: 3 / 4;
+        justify-self: end; } }
+    @media only screen and (max-width: 31.25em) {
+      .footer__nav--link-games {
+        grid-column: 4 / 5; } }
   .footer__nav--social {
     grid-column: 8 / 10;
     grid-row: 2 / 3;
-    align-self: center; }
+    align-self: center;
+    transition: all 0.3s; }
+    .footer__nav--social :hover {
+      transform: scale(125%); }
     @media only screen and (max-width: 1050px) {
       .footer__nav--social {
         grid-column: 7 / -1;
         justify-self: center; } }
     @media only screen and (max-width: 31.25em) {
       .footer__nav--social {
-        grid-column: 6 / -1; } }
+        grid-column: 5 / -1; } }
     .footer__nav--social img {
       width: 5rem;
       padding-right: 1.5rem; }
