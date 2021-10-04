@@ -31,13 +31,13 @@
 *::before {
   padding: 0;
   margin: 0;
-  box-sizing: inherit;
-  scroll-behavior: smooth; }
+  box-sizing: inherit; }
 
 html {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
-  font-size: 10px; }
+  font-size: 10px;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box;
@@ -555,7 +555,8 @@ header {
         padding: 7rem 0; } }
   .section__sites--links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 5rem 0; }
     @media only screen and (max-width: 37.5em) {
       .section__sites--links {
@@ -564,15 +565,19 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      padding: 2rem 0; }
       @media only screen and (max-width: 37.5em) {
         .section__sites--links-site {
           padding-bottom: 4rem; } }
       .section__sites--links-site img {
+        width: 20rem;
         border-radius: 50%; }
         @media only screen and (max-width: 56.25em) {
           .section__sites--links-site img {
             width: 13rem; } }
+      .section__sites--links-site p {
+        max-width: 25em; }
 
 .mysg-img {
-  transform: scale(125%); }
+  transform: scale(110%); }

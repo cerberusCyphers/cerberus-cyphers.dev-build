@@ -60,7 +60,7 @@
 		<h2>About Us</h2>
 		<div class="section__about--text">
 			<p>
-				Cerberus Cyphers is here for your custom web development needs. Founded in 2021, we kicked off the new year with
+				Cerberus Cyphers is here for your custom web development needs. Founded in 2021, the new year kicked off with
 				one goal: Build the best sites possible for you! We are constantly expanding our toolbox, which includes HTML5,
 				CSS3, Javascript, Sass, Nodejs, Expressjs, and more.
 			</p>
@@ -71,28 +71,56 @@
 		</div>
 		<p></p>
 	</section>
-	<section class="section__games" id="section-games">
-		<h2>Game Zone</h2>
-		<div class="section__games--pig">
-			<video class="vid-pig" width="105%" controls>
-				<source src="/vids/PigGame.mp4" type="video/mp4" />
-			</video><br />
-			<p>
-				Two players take turns rolling dice to reach 100 points for victory.
-			</p>
-			<a href="https://cc-dice-pig.netlify.app/">Try it now!</a>
-		</div>
-		<div class="section__games--guess">
-			<video class="vid-guess" width="100%" controls>
-				<source src="/vids/GuessNumber.mp4" type="video/mp4" />
-			</video><br />
-			<p>
-				Test your number guessing ability. Then try to beat your previous high
-				score.
-			</p>
-			<a href="https://cc-guess-number.netlify.app/">Make your first guess!</a>
+
+	<section class="section__sites">
+		<h2>Sites</h2>
+		<p class="section__sites--text">
+			Click the logos below to visit sites built by Cerberus Cyphers. Check
+			out the GitHub repositories to see the code! All logos created in varying online platforms, by Cerberus Cyphers.
+		</p>
+		<div class="section__sites--links">
+			<div class="section__sites--links-site">
+				<a href="https://banditsoutdoors.netlify.app/">
+					<img src="/img/site icons/bandit1.jpg" alt="bandits logo" />
+				</a>
+				<p class="site__description">First site written from scratch after taking a couple courses. It uses HTML,
+					CSS, and Javascript.</p>
+				<a href="https://github.com/cerberusCyphers/bandits_outdoors">GitHub Repo</a>
+			</div>
+			<div class="section__sites--links-site">
+				<a href="https://bandits-outdoors-blog.herokuapp.com/">
+					<img src="/img/site icons/bandits-outdoors.png" alt="bandits logo" />
+				</a>
+				<p class="site__description">Blog site built with Expressjs, Mongoose, and Sass is a rewrite of the
+					preceding Bandit's Outdoor Adventures.
+				</p>
+				<a href="https://github.com/cerberusCyphers/banditsOutdoorsBlog">GitHub Repo</a>
+			</div>
+			<div class="section__sites--links-site">
+				<a href="https://mysg-artshop.netlify.app/">
+					<img src="/img/site icons/mysg.png" alt="mysg logo" class="mysg-img" />
+				</a>
+				<p class="site__description">Shop style site utilizing Sass & Flexbox, includes a video background and hover
+					effects.</p>
+				<a href="https://github.com/cerberusCyphers/mysg">GitHub Repo</a>
+			</div>
+			<div class="section__sites--links-site">
+				<a href="https://2avt.netlify.app/">
+					<img src="/img/site icons/2AVT.png" alt="mysg logo" />
+				</a>
+				<p class="site__description">Responsive site, built early on with HTML and CSS3.</p>
+				<a href="https://github.com/cerberusCyphers/2AVT">GitHub Repo</a>
+			</div>
+			<div class="section__sites--links-site">
+				<a href="https://frantastic.netlify.app/">
+					<img src="/img/site icons/frantastic.png" alt="mysg logo" />
+				</a>
+				<p class="site__description">Exploring CSS variables and reinforcing Grid.</p>
+				<a href="https://github.com/cerberusCyphers/frantastic">GitHub Repo</a>
+			</div>
 		</div>
 	</section>
+
 	<section class="section__projects" id="section-projects">
 		<h2>Projects Gallery</h2>
 		<div class="section__projects--bankist-desc">
@@ -170,33 +198,30 @@
 			<img loading="lazy" src="/img/projects/omnifood.png" alt="omnifood" class="section__projects--screenshot" />
 		</div>
 	</section>
-	<section class="section__sites">
-		<h2>Sites</h2>
-		<p class="section__sites--text">
-			Click the logos below to visit sites built by Cerberus Cyphers. Check
-			out the GitHub repositories to see the code!
-		</p>
-		<div class="section__sites--links">
-			<div class="section__sites--links-site">
-				<a href="https://banditsoutdoors.netlify.app/">
-					<img src="/img/site icons/bandits-outdoors.png" alt="bandits logo" />
-				</a>
-				<a href="https://github.com/cerberusCyphers/bandits_outdoors">GitHub Repo</a>
-			</div>
-			<div class="section__sites--links-site">
-				<a href="https://mysg-artshop.netlify.app/">
-					<img src="/img/site icons/mysg.png" alt="mysg logo" class="mysg-img" />
-				</a>
-				<a href="https://github.com/cerberusCyphers/mysg">GitHub Repo</a>
-			</div>
-			<div class="section__sites--links-site">
-				<a href="https://2avt.netlify.app/">
-					<img src="/img/site icons/2AVT.png" alt="mysg logo" />
-				</a>
-				<a href="https://github.com/cerberusCyphers/2AVT">GitHub Repo</a>
-			</div>
+
+	<section class="section__games" id="section-games">
+		<h2>Game Zone</h2>
+		<div class="section__games--pig">
+			<video class="vid-pig" width="105%" controls>
+				<source src="/vids/PigGame.mp4" type="video/mp4" />
+			</video><br />
+			<p>
+				Two players take turns rolling dice to reach 100 points for victory.
+			</p>
+			<a href="https://cc-dice-pig.netlify.app/">Try it now!</a>
+		</div>
+		<div class="section__games--guess">
+			<video class="vid-guess" width="100%" controls>
+				<source src="/vids/GuessNumber.mp4" type="video/mp4" />
+			</video><br />
+			<p>
+				Test your number guessing ability. Then try to beat your previous high
+				score.
+			</p>
+			<a href="https://cc-guess-number.netlify.app/">Make your first guess!</a>
 		</div>
 	</section>
+
 	<section class="section__contact" id="section-contact">
 		<div class="section__contact--text">
 			<p class="section__contact--text-p">Are you ready to create your web presence? Reach out to us in the manner most
