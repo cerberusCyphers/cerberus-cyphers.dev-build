@@ -2,7 +2,11 @@
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: $deafult-gap;
-	background-color: $color-white;
+	background-image: radial-gradient(
+		to right bottom,
+		$color-white-faded,
+		$color-grey-dark
+	);
 	text-align: center;
 
 	& h2 {

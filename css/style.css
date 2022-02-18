@@ -118,7 +118,7 @@ button {
   transform: scale(110%); }
 
 .section__about {
-  background-image: linear-gradient(to right bottom, #951827, rgba(246, 244, 244, 0.9));
+  background-image: linear-gradient(to right bottom, #951827, #b0b0b0);
   padding-bottom: 10rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -293,7 +293,7 @@ button {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 2rem;
-  background-color: #f6f4f4;
+  background-image: radial-gradient(to right bottom, rgba(246, 244, 244, 0.9), #424242);
   text-align: center; }
   .section__games h2 {
     grid-column: 3 / 4;
@@ -451,93 +451,76 @@ header {
       font-size: 1.6rem; } }
 
 .section__projects {
-  display: grid;
-  grid-template-columns: repeat(5, 19%) 5rem;
-  grid-template-rows: 15rem repeat(5, 35rem);
-  grid-gap: 2rem;
-  background-color: #b0b0b0;
-  color: #f6f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-gap: 4rem;
+  background-image: linear-gradient(to left bottom, #b0b0b0, rgba(246, 244, 244, 0.9));
+  color: #424242;
   font-size: 2.4rem; }
   @media only screen and (max-width: 56.25em) {
     .section__projects {
       grid-template-columns: 1fr;
       grid-template-rows: 8rem;
       justify-content: center; } }
-  .section__projects h2 {
-    grid-column: 2 / 4; }
-    @media only screen and (max-width: 56.25em) {
-      .section__projects h2 {
-        grid-column: 1 / 2; } }
-  .section__projects p {
-    padding-top: 5rem;
-    padding-left: 3rem;
-    letter-spacing: 0.1rem; }
-    @media only screen and (max-width: 75em) {
-      .section__projects p {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .section__projects p {
-        padding: 3rem 6rem 6rem 6rem; } }
-  .section__projects img {
-    border-radius: 2rem; }
-  .section__projects--screenshot {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block; }
-    @media only screen and (max-width: 1050px) {
-      .section__projects--screenshot {
-        width: 95%;
-        height: 95%; } }
-  .section__projects--bankist {
-    grid-row: 2 / 3; }
-    .section__projects--bankist-desc {
-      grid-column: 1 / 3; }
-    .section__projects--bankist-img {
-      grid-column: 3 / -2; }
-      @media only screen and (max-width: 56.25em) {
-        .section__projects--bankist-img {
-          grid-row: 2 / 3; } }
-  .section__projects--nexter {
-    grid-row: 3 / 4; }
-    .section__projects--nexter-desc {
-      grid-column: 4 / -2; }
-    .section__projects--nexter-img {
-      grid-column: 1 / 4; }
-  .section__projects--mapty {
-    grid-row: 4 / 5; }
-    .section__projects--mapty-desc {
-      grid-column: 1 / 3; }
-    .section__projects--mapty-img {
-      grid-column: 3 / -2; }
-      @media only screen and (max-width: 56.25em) {
-        .section__projects--mapty-img {
-          grid-row: 6 / 7; } }
-  .section__projects--forkify {
-    grid-row: 5 / 6; }
-    .section__projects--forkify-desc {
-      grid-column: 4 / -2; }
-    .section__projects--forkify-img {
-      grid-column: 1 / 4; }
-  .section__projects--omnifood {
-    grid-row: 6 / 7; }
-    .section__projects--omnifood-desc {
-      grid-column: 1 / 3; }
-    .section__projects--omnifood-img {
-      grid-column: 3 / -2; }
-      @media only screen and (max-width: 56.25em) {
-        .section__projects--omnifood-img {
-          grid-row: 10 / 11; } }
+  .section__projects--site {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    width: 90vw; }
+    .section__projects--site-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section__projects--site-logo img {
+        border-radius: 50%;
+        width: 20rem;
+        box-shadow: 2rem 2rem 3rem rgba(66, 66, 66, 0.6); }
+        @media only screen and (max-width: 56.25em) {
+          .section__projects--site-logo img {
+            width: 13rem; } }
+    .section__projects--site-img {
+      width: 60%; }
+      .section__projects--site-img img,
+      .section__projects--site-img video {
+        width: 90rem;
+        border-radius: 2rem;
+        box-shadow: 2rem 2rem 3rem rgba(66, 66, 66, 0.6); }
+    .section__projects--site p {
+      letter-spacing: 0.1rem; }
 
-.tools__html {
-  background-color: rgba(255, 0, 0, 0.75); }
-
-.tools__css {
-  background-color: rgba(0, 94, 255, 0.75); }
-
-.tools__js {
-  background-color: rgba(255, 255, 0, 0.75); }
+.tools {
+  height: 2.5rem; }
+  .tools__html {
+    border-radius: 0.5rem;
+    padding: 2px;
+    background-color: rgba(255, 0, 0, 0.75); }
+  .tools__css {
+    border-radius: 0.5rem;
+    padding: 2px;
+    background-color: rgba(0, 94, 255, 0.75); }
+  .tools__js {
+    border-radius: 0.5rem;
+    padding: 2px;
+    background-color: rgba(255, 255, 0, 0.75); }
+  .tools__nodejs {
+    border-radius: 0.5rem;
+    padding: 2px;
+    background-color: rgba(3, 186, 49, 0.75); }
+  .tools__sass {
+    border-radius: 0.5rem;
+    padding: 2px;
+    background-color: rgba(245, 71, 216, 0.75); }
+  .tools__fb {
+    border-radius: 0.5rem;
+    padding: 2px;
+    background-color: #1877f2; }
+  .tools__ig {
+    border-radius: 0.5rem;
+    padding: 2px;
+    background-color: #8134af; }
 
 .section__sites {
   display: flex;
