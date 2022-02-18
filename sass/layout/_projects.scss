@@ -1,10 +1,15 @@
 .section__projects {
-	display: grid;
-	grid-template-columns: repeat(5, 19%) 5rem;
-	grid-template-rows: 15rem repeat(5, 35rem);
-	grid-gap: $deafult-gap;
-	background-color: $color-grey-light;
-	color: $color-white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	grid-gap: 4rem;
+	background-image: linear-gradient(
+		to left bottom,
+		$color-grey-light,
+		$color-white-faded
+	);
+	color: $color-grey-dark;
 
 	font-size: 2.4rem;
 
@@ -14,111 +19,87 @@
 		justify-content: center;
 	}
 
-	& h2 {
-		grid-column: 2 / 4;
+	// & h2 {
+	// 	grid-column: 2 / 4;
 
-		@media only screen and (max-width: $bp-md) {
-			grid-column: 1 / 2;
-		}
-	}
+	// 	@media only screen and (max-width: $bp-md) {
+	// 		grid-column: 1 / 2;
+	// 	}
+	// }
 
-	& p {
-		padding-top: 5rem;
-		padding-left: 3rem;
-		letter-spacing: 0.1rem;
+	&--site {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		gap: 3rem;
+		width: 90vw;
 
-		@media only screen and (max-width: $bp-xl) {
-			padding-left: 1.5rem;
-			padding-right: 1.5rem;
-		}
-		@media only screen and (max-width: $bp-md) {
-			padding: 3rem 6rem 6rem 6rem;
-		}
-	}
+		&-logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			& img {
+				border-radius: 50%;
+				width: 20rem;
+				box-shadow: 2rem 2rem 3rem $color-grey-faded;
 
-	& img {
-		border-radius: 2rem;
-	}
-
-	&--screenshot {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		display: block;
-
-		@media only screen and (max-width: 1050px) {
-			width: 95%;
-			height: 95%;
-		}
-	}
-
-	&--bankist {
-		grid-row: 2 / 3;
-		&-desc {
-			grid-column: 1 / 3;
-		}
-		&-img {
-			grid-column: 3 / -2;
-
-			@media only screen and (max-width: $bp-md) {
-				grid-row: 2 / 3;
+				@media only screen and (max-width: $bp-md) {
+					width: 13rem;
+				}
 			}
 		}
-	}
-	&--nexter {
-		grid-row: 3 / 4;
-		&-desc {
-			grid-column: 4 / -2;
-		}
-		&-img {
-			grid-column: 1 / 4;
-		}
-	}
-	&--mapty {
-		grid-row: 4 / 5;
-		&-desc {
-			grid-column: 1 / 3;
-		}
-		&-img {
-			grid-column: 3 / -2;
 
-			@media only screen and (max-width: $bp-md) {
-				grid-row: 6 / 7;
+		&-img {
+			width: 60%;
+
+			& img,
+			& video {
+				width: 90rem;
+				border-radius: 2rem;
+				box-shadow: 2rem 2rem 3rem $color-grey-faded;
 			}
 		}
-	}
-	&--forkify {
-		grid-row: 5 / 6;
-		&-desc {
-			grid-column: 4 / -2;
-		}
-		&-img {
-			grid-column: 1 / 4;
-		}
-	}
-	&--omnifood {
-		grid-row: 6 / 7;
-		&-desc {
-			grid-column: 1 / 3;
-		}
-		&-img {
-			grid-column: 3 / -2;
-
-			@media only screen and (max-width: $bp-md) {
-				grid-row: 10 / 11;
-			}
+		& p {
+			letter-spacing: 0.1rem;
 		}
 	}
 }
 
 .tools {
+	height: 2.5rem;
 	&__html {
+		border-radius: 0.5rem;
+		padding: 2px;
 		background-color: hsla(0, 100%, 50%, 0.75);
 	}
 	&__css {
+		border-radius: 0.5rem;
+		padding: 2px;
 		background-color: hsla(218, 100%, 50%, 0.75);
 	}
 	&__js {
+		border-radius: 0.5rem;
+		padding: 2px;
 		background-color: hsla(60, 100%, 50%, 0.75);
+	}
+	&__nodejs {
+		border-radius: 0.5rem;
+		padding: 2px;
+		background-color: hsla(135, 97%, 37%, 0.75);
+	}
+	&__sass {
+		border-radius: 0.5rem;
+		padding: 2px;
+		background-color: hsla(310, 90%, 62%, 0.75);
+	}
+	&__fb {
+		border-radius: 0.5rem;
+		padding: 2px;
+		background-color: $color-facebook;
+	}
+	&__ig {
+		border-radius: 0.5rem;
+		padding: 2px;
+		background-color: $color-social-ig;
 	}
 }
