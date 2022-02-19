@@ -33,6 +33,9 @@
 		align-items: center;
 		gap: 3rem;
 		width: 90vw;
+		@media only screen and (max-width: $bp-lg) {
+			flex-direction: column;
+		}
 
 		&-logo {
 			display: flex;
@@ -41,7 +44,7 @@
 			& img {
 				border-radius: 50%;
 				width: 20rem;
-				box-shadow: 2rem 2rem 3rem $color-grey-faded;
+				box-shadow: 2rem 2rem 5rem $color-grey-faded;
 
 				@media only screen and (max-width: $bp-md) {
 					width: 13rem;
@@ -50,17 +53,35 @@
 		}
 
 		&-img {
+			flex-shrink: 1;
 			width: 60%;
+			@media only screen and (max-width: $bp-lg) {
+				width: 90%;
+			}
 
 			& img,
 			& video {
-				width: 90rem;
+				width: 100%;
+				height: auto;
 				border-radius: 2rem;
 				box-shadow: 2rem 2rem 3rem $color-grey-faded;
 			}
 		}
-		& p {
-			letter-spacing: 0.1rem;
+
+		&-desc {
+			padding: 1rem;
+			background-color: $color-primary-faded;
+			color: $color-white;
+			border: 2px solid $color-primary;
+			border-radius: 2rem;
+			box-shadow: 1rem 1rem 3rem $color-grey-faded;
+			@media only screen and (max-width: $bp-lg) {
+				width: 80%;
+			}
+
+			& p {
+				letter-spacing: 0.1rem;
+			}
 		}
 	}
 }
@@ -101,5 +122,10 @@
 		border-radius: 0.5rem;
 		padding: 2px;
 		background-color: $color-social-ig;
+	}
+}
+.reverse {
+	@media only screen and (max-width: $bp-lg) {
+		flex-direction: column-reverse;
 	}
 }

@@ -28,7 +28,7 @@ header {
 		grid-column: 2 / 4;
 		transform: translate(-10rem, 3rem);
 
-		@media only screen and (max-width: 1050px) {
+		@media only screen and (max-width: $bp-lg) {
 			grid-column: 3 / 4;
 		}
 		@media only screen and (max-width: $bp-sm) {
@@ -41,7 +41,7 @@ header {
 		&-mobile {
 			display: none;
 
-			@media only screen and (max-width: 1050px) {
+			@media only screen and (max-width: $bp-lg) {
 				display: block;
 				border-radius: 50%;
 				width: 8rem;
@@ -57,7 +57,7 @@ header {
 			@media only screen and (max-width: $bp-xl) {
 				width: 30rem;
 			}
-			@media only screen and (max-width: 1050px) {
+			@media only screen and (max-width: $bp-lg) {
 				display: none;
 			}
 		}
