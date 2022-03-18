@@ -503,6 +503,7 @@ header {
         border-radius: 2rem;
         box-shadow: 2rem 2rem 3rem rgba(66, 66, 66, 0.6); }
     .section__projects--site-desc {
+      max-width: 60rem;
       padding: 1rem;
       background-color: rgba(149, 24, 39, 0.5);
       color: #f6f4f4;
@@ -529,6 +530,10 @@ header {
     border-radius: 0.5rem;
     padding: 2px;
     background-color: rgba(255, 255, 0, 0.75); }
+  .tools__ng {
+    border-radius: 0.5rem;
+    padding: 2px;
+    background-color: rgba(244, 64, 52, 0.75); }
   .tools__nodejs {
     border-radius: 0.5rem;
     padding: 2px;

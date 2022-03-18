@@ -69,6 +69,7 @@
 		}
 
 		&-desc {
+			max-width: 60rem;
 			padding: 1rem;
 			background-color: $color-primary-faded;
 			color: $color-white;
@@ -102,6 +103,11 @@
 		border-radius: 0.5rem;
 		padding: 2px;
 		background-color: hsla(60, 100%, 50%, 0.75);
+	}
+	&__ng {
+		border-radius: 0.5rem;
+		padding: 2px;
+		background-color: hsla(4, 90%, 58%, 0.75);
 	}
 	&__nodejs {
 		border-radius: 0.5rem;
